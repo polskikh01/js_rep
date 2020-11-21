@@ -7,7 +7,7 @@ module.exports = {
     "apiPath": "stubs/api",
     webpackConfig: {
         output: {
-            publicPath: `/static/auth-system/${pkg.version}/`
+            publicPath: `/static/js_rep/${pkg.version}/`
         },
         module: {
             rules: [

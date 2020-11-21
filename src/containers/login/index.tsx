@@ -1,6 +1,10 @@
 import React from 'react';
 
 import {
+    like
+} from '@main/asset';
+
+import {
     LabeledInput,
     Button
 } from '@main/components'
@@ -22,6 +26,7 @@ class Login extends React.Component {
                     <LabeledInput label="Введите пароль" id="password-input" name="password" type="password" />
                     <Button colorScheme="purple">sumbit</Button>
                 </form>
+                <img src={like}/>
             </div>
         )
     }
