@@ -1,5 +1,5 @@
 {
-  "name": "auth-system",
+  "name": "js_rep",
   "version": "1.0.0",
   "description": "",
   "main": "./src/index.tsx",
@@ -12,12 +12,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@bitbucket.org/online-mentor/auth-system.git"
+    "url": "git+ssh:polskikh01@bitbucket.org/polskikh01/js_rep.git"
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
-  "homepage": "https://bitbucket.org/online-mentor/auth-system#readme",
+  "homepage": "https://polskikh01@bitbucket.org/polskikh01/js_rep#readme",
   "dependencies": {
     "@ijl/cli": "^1.10.3",
     "classnames": "^2.2.6",
