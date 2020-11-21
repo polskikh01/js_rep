@@ -1,28 +1,54 @@
 {
-    "name": "js_rep",
-    "version": "1.0.0",
-    "description": "**Edit a file, create a new file, and clone from Bitbucket in under 2 minutes**",
-    "main": "./src/index.tsx",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "start": "ijl-cli --server --port=8099 --with-open-browser",
-        "build": "npm run clean && ijl-cli --build --dev",
-        "build:prod": "npm run clean && ijl-cli --build",
-        "clean": "rimraf dist"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://polskikh01@bitbucket.org/polskikh01/js_rep.git"
-    },
-    "keywords": [],
-    "author": "",
-    "license": "ISC",
-    "homepage": "https://bitbucket.org/polskikh01/js_rep#readme",
-    "dependencies": {
-        "@ijl/cli": "^1.10.3",
-        "express": "^4.17.1",
-        "react": "^17.0.1",
-        "react-dom": "^17.0.1",
-        "typescript": "^4.0.5"
-    }
+  "name": "auth-system",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/index.tsx",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "ijl-cli --server --port=8099 --with-open-browser",
+    "build": "npm run clean && ijl-cli --build --dev",
+    "build:prod": "npm run clean && ijl-cli --build",
+    "clean": "rimraf dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/online-mentor/auth-system.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "homepage": "https://bitbucket.org/online-mentor/auth-system#readme",
+  "dependencies": {
+    "@ijl/cli": "^1.10.3",
+    "classnames": "^2.2.6",
+    "express": "^4.17.1",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "typescript": "^4.0.5"
+  },
+  "devDependencies": {
+    "@types/react": "^16.9.56",
+    "@types/react-dom": "^16.9.9",
+    "autoprefixer": "^10.0.2",
+    "css-loader": "^5.0.1",
+    "cssnano": "^4.1.10",
+    "postcss": "^8.1.8",
+    "postcss-calc": "^7.0.5",
+    "postcss-color-function": "^4.1.0",
+    "postcss-custom-media": "^7.0.8",
+    "postcss-custom-properties": "^10.0.0",
+    "postcss-discard-comments": "^4.0.2",
+    "postcss-for": "^2.1.1",
+    "postcss-import": "^13.0.0",
+    "postcss-loader": "^4.1.0",
+    "postcss-nested": "^5.0.1",
+    "postcss-preset-env": "^6.7.0",
+    "postcss-simple-vars": "^6.0.1",
+    "style-loader": "^2.0.0"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "ie >= 11"
+  ]
 }

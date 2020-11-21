@@ -1,0 +1,12 @@
+.wrapper {
+    background: rgb(50, 123, 141);
+
+    > .login-form {
+        padding: 20px;
+        background-color: white;
+        max-width: 416px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+}

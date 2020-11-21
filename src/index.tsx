@@ -1,8 +1,7 @@
 import React from 'react';
 import ReactDom from 'react-dom';
 
-//JSX элемент
-const App = () => <h1>Hello world для проекта - js_rep</h1>
+import App from './app';
 
 export default () => <App/>;
 
@@ -16,4 +15,3 @@ export const mount = (Сomponent) => {
 export const unmount = () => {
     ReactDom.unmountComponentAtNode(document.getElementById('app'));
 };
-
