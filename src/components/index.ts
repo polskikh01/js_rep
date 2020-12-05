@@ -1,7 +1,8 @@
 import LabeledInput from './labeled-input';
-import Button from './button';
+import Button, { ButtonColors } from './button';
 
 export {
     LabeledInput,
-    Button
+    Button,
+    ButtonColors
 }

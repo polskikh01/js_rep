@@ -1,7 +1,10 @@
 import React, { HTMLAttributes } from 'react';
 import PropTypes from 'prop-types';
 
-interface LabeledInputProps extends Omit<HTMLAttributes<HTMLInputElement>, 'id' | 'name'> {
+import style from './style.css'
+
+// лучше использовать TS
+interface LabeledInputProps extends Omit<HTMLAttributes<HTMLInputElement>, 'id'> {
     id: string | number;
     name: string;
     label: string;
@@ -10,13 +13,13 @@ interface LabeledInputProps extends Omit<HTMLAttributes<HTMLInputElement>, 'id' 
 }
 
 export const LabeledInput: React.FC<LabeledInputProps> = ({ inputRef, label, id, name, type, ...rest }) => (
-    <div>
-        <label htmlFor={String(id)}>{label}</label>
-        <input ref={inputRef} type={type} name={name} id={String(id)} {...rest} />
+    <div className={style.wrapper}>
+        <label className={style.label} htmlFor={String(id)}>{label}</label>
+        <input className={style.field} ref={inputRef} type={type} name={name} id={String(id)} {...rest} />
     </div>
 )
 
-LabeledInput.propTypes = {
+/*LabeledInput.propTypes = {
     label: (props, propName) => {
         const value = props[propName];
 
@@ -30,7 +33,7 @@ LabeledInput.propTypes = {
     ]),
     name: PropTypes.string.isRequired,
     type: PropTypes.oneOf(['text', 'password']),
-}
+}*/
 
 LabeledInput.defaultProps = {
     type: 'text'

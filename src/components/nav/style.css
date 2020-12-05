@@ -1,0 +1,9 @@
+.nav-butt {
+    display: flex;
+    padding-right: 15px;
+    padding-left: 15px;
+    color: red;
+    flex-direction: row;
+    align-content: center;
+    transition: color 0.2s ease-out 0s;
+}

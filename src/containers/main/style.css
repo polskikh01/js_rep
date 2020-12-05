@@ -1,0 +1,50 @@
+@import '../../__data__/style/colors.css';
+@import '../../__data__/style/sizes.css';
+
+.focus-wrapper {
+    outline: none;
+}
+
+.page {
+    display: flex;
+    min-height: calc(100vh - var(--offset-lg));
+}
+
+.m-header {
+    position: fixed;
+    background-color: var(--black-7);
+    color: var(--white);
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.menu-header {
+    padding-right: var(--offset-md);
+    padding-left: var(--offset-md);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.menu {
+    display: flex;
+    height: 60px;
+    padding-right: var(--offset-lg);
+    padding-left: var(--offset-lg);
+}
+
+.logo {
+    display: flex;
+    width: 100px;
+    height: 100%;
+    margin-right: var(--offset-md);
+    align-items: center;
+
+    .l-s-text {
+        margin-right: 10px;
+        margin-left: 10px;
+        font-size: 20px;
+        line-height: 20px;
+    }
+}

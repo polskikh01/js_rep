@@ -1,11 +1,22 @@
+@import '../../__data__/style/colors.css';
+
 .main {
-    border-radius: 3px;
+    border-radius: 10px;
+    min-height: 40px;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--white);
+    border: none;
+
+    &:focus {
+        outline-color: var(--black);
+    }
 }
 
 .purple {
-    background-color: #a059d8;
+    background-color: var(--crimson-neon);
 }
 
 .blue {
-    background-color: #5285ec;
+    background-color: var(--blue-neon);
 }
