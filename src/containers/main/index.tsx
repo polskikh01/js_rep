@@ -1,12 +1,10 @@
-import Nav from '@main/components/nav/nav';
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import {
-
-} from '../../components';
+import Nav from '../../components/nav/nav';
 
 import style from "./style.css";
+import car from "../../asset/123.jpg";
 
 class Main extends React.Component {
     render() {
@@ -46,7 +44,7 @@ class Main extends React.Component {
                             </div>
                         </header>
                         <div>
-
+                            <img src={car} alt="car"/>
                         </div>
                         <footer>
 

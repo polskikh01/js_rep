@@ -19,7 +19,7 @@
   "license": "MIT",
   "homepage": "https://polskikh01@bitbucket.org/polskikh01/js_rep#readme",
   "dependencies": {
-    "@ijl/cli": "^2.0.1",
+    "@ijl/cli": "^2.0.2",
     "classnames": "^2.2.6",
     "csstype": "^3.0.5",
     "express": "^4.17.1",
