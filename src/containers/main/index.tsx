@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import Nav from '../../components/nav/nav';
 
 import style from "./style.css";
-import car from "../../asset/123.jpg";
+import {basket} from "../../asset/index";
 
 class Main extends React.Component {
     render() {
@@ -20,35 +20,31 @@ class Main extends React.Component {
                                             Calabash
                                         </span>
                                     </a>
-                                    <Nav
-                                        isActive={true}
-                                        title={"Продукты"}
-                                    />
-                                    <Nav
-                                        isActive={false}
-                                        title={"Поддержка"}
-                                    />
-                                    <Nav
-                                        isActive={false}
-                                        title={"B2B"}
-                                    />
-                                    <Nav
-                                        isActive={false}
-                                        title={"Доставка и оплата"}
-                                    />
-                                    <Nav
-                                        isActive={false}
-                                        title={"Контакты"}
-                                    />
+                                    <nav className={style.navP}>
+                                        <Nav title="Продукты"/>
+                                        <Nav title="Доставка и оплата"/>
+                                        <Nav title="Контакты"/>
+                                    </nav>
+                                    <div className={style.basket}>
+                                        <img src={basket} alt="Basket"/>
+                                    </div>
                                 </div>
                             </div>
                         </header>
-                        <div>
-                            <img src={car} alt="car"/>
+                        <div className={style.wrap}>
+                            <div>
+                                <section>
+                                    <div className={style.info}>
+                                        <div className={style.infoPhoto}>
+                                            123
+                                        </div>
+                                        <div className={style.infoText}>
+                                            123
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
                         </div>
-                        <footer>
-
-                        </footer>
                     </div>
                 </div>
             </div>

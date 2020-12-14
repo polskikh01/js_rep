@@ -4,12 +4,10 @@ import cn from 'classnames';
 import style from './style.css';
 
 interface NavProps {
-    isActive: boolean;
     title: string;
-    to?: string;
 };
 
-const Nav: React.FC<NavProps> = ({isActive, title, to}) => (
+const Nav: React.FC<NavProps> = ({ title}) => (
     <a className={style.navButt}>
         {title}
     </a>

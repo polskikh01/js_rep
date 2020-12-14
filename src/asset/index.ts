@@ -1,7 +1,5 @@
-import logo from "./img/logo.png"
-import search from "./img/search_black_sm.svg"
+import basket from "./img/basket.png"
 
 export {
-    logo,
-    search
+    basket
 };

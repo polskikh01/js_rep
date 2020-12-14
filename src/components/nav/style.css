@@ -1,9 +1,12 @@
 .nav-butt {
     display: flex;
-    padding-right: 15px;
-    padding-left: 15px;
-    color: red;
+    padding-right: 50px;
+    padding-left: 50px;
+    color: var(--white);
+    font-size: 18px;
     flex-direction: row;
-    align-content: center;
-    transition: color 0.2s ease-out 0s;
+    align-items: center;
+    cursor: pointer;
+    /*transition: color 0.2s ease-out 0s;*/
 }
+
