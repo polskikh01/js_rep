@@ -1,5 +1,4 @@
 import React from 'react';
-import cn from 'classnames';
 
 import style from './style.css';
 
@@ -9,7 +8,7 @@ interface NavProps {
 
 const Nav: React.FC<NavProps> = ({ title}) => (
     <a className={style.navButt}>
-        {title}
+        <span>{title}</span>
     </a>
 );
 

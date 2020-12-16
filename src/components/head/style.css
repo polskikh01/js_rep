@@ -1,0 +1,62 @@
+@import '../../__data__/style/colors.css';
+@import '../../__data__/style/sizes.css';
+
+.m-header {
+    background-color: var(--black-7);
+    color: var(--white);
+    top: 0;
+    left: 0;
+}
+
+.menu-header {
+    padding-right: var(--offset-md);
+    padding-left: var(--offset-md);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.menu {
+    display: flex;
+    height: 60px;
+    padding-right: var(--offset-lg);
+    padding-left: var(--offset-lg);
+}
+
+.logo {
+    display: flex;
+    width: 100px;
+    height: 100%;
+    margin-right: var(--offset-md);
+    align-items: center;
+    cursor: pointer;
+
+    .l-s-text {
+        margin-right: 10px;
+        margin-left: 10px;
+        font-size: 30px;
+        line-height: 20px;
+    }
+}
+
+.nav-p {
+    display: flex;
+    margin: 0 auto;
+    height: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.basket {
+    display: flex;
+    width: auto;
+    height: 100%;
+    -webkit-box-align: center;
+    align-items: center;
+    cursor: pointer;
+
+    img {
+        height: 60px;
+        width: auto;
+        object-fit: cover;
+    }
+}

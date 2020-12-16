@@ -7,6 +7,9 @@
     flex-direction: row;
     align-items: center;
     cursor: pointer;
-    /*transition: color 0.2s ease-out 0s;*/
-}
 
+    span:hover {
+        color: var(--blue);
+        transition: all .3s ease;
+    }
+}
