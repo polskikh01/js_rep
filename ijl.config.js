@@ -7,7 +7,7 @@ module.exports = {
     "apiPath": "stubs/api",
     webpackConfig: {
         output: {
-            publicPath: `/static/js_rep/${pkg.version}/`,
+            publicPath: `/static/${pkg.name}/${pkg.version}/`,
         },
         module: {
             rules: [
@@ -73,4 +73,11 @@ module.exports = {
             ],
         },
     },
+    navigations: {
+        'js_rep': '/js_rep',
+        'link.js_rep.product': '/js_rep/product',
+        'link.js_rep.accessories': '/js_rep/accessories',
+        'link.js_rep.complete': '/js_rep/complete',
+        'link.js_rep.contacts': '/js_rep/contacts',
+    }
 }

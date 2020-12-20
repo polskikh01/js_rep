@@ -8,8 +8,8 @@
     align-items: center;
     cursor: pointer;
 
-    span:hover {
-        color: var(--blue);
+    .nav-butt:hover {
+        color: #2599ee;
         transition: all .3s ease;
     }
 }

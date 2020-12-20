@@ -1,12 +1,18 @@
 import React from "react";
+import {
+    BrowserRouter
+} from "react-router-dom";
 
+import pkg from "../package.json";
 
-import Main from "./containers/main";
+import Dashboard from "./containers/dashboadr"
 
 import './app.css';
 
 const App = () => (
-    <Main/>
+    <BrowserRouter basename='/js_rep'>
+        <Dashboard/>
+    </BrowserRouter>
 );
 
 export default App;
