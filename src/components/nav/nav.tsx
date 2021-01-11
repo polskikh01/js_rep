@@ -4,10 +4,11 @@ import style from './style.css';
 
 interface NavProps {
     title: string;
+    link?: string;
 };
 
-const Nav: React.FC<NavProps> = ({ title}) => (
-    <a className={style.navButt}>
+const Nav: React.FC<NavProps> = ({ title, link}) => (
+    <a className={style.navButt} href={link}>
         <span>{title}</span>
     </a>
 );

@@ -28,6 +28,8 @@
     height: 100%;
     margin-right: var(--offset-md);
     align-items: center;
+    color: var(--white);
+    text-decoration: none;
     cursor: pointer;
 
     .l-s-text {

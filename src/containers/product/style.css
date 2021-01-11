@@ -1,3 +1,37 @@
 @import '../../__data__/style/colors.css';
 @import '../../__data__/style/sizes.css';
 
+.page {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    background-color: var(--white);
+}
+
+.wrap {
+    display: flex;
+    width: 100vw;
+    height: calc(100vh - 60px - 160px);
+    background: var(--white);
+    flex-direction: column;
+}
+
+.footer-m {
+    display: flex;
+    align-items: flex-end;
+    background-color: var(--white-9);
+    padding-right: var(--offset-md);
+    padding-left: var(--offset-md);
+    height: 160px;
+}
+
+.footer-container {
+    display: flex;
+    height: 100%;
+    width: calc((100% - 2 * var(--offset-md)) / 4);
+    padding-left: var(--offset-sm);
+
+    span {
+        font-size: 36px;
+    }
+}

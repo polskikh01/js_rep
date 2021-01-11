@@ -13,6 +13,7 @@ import Product from "./product";
 import Accessories from "./accessories";
 import Complete from "./complete";
 import Contacts from "./contacts";
+import ShippingAndPayment from "./shippingAndPayment";
 
 const Dashboadr = () => (
     <Switch>
@@ -22,17 +23,20 @@ const Dashboadr = () => (
         <Route path={URLs.main.url}>
             <Main />
         </Route>
+        <Route path={URLs.product.url}>
+            <Product />
+        </Route>
+        <Route path={URLs.shippingAndPayment.url}>
+            <ShippingAndPayment />
+        </Route>
+        <Route path={URLs.contacts.url}>
+            <Contacts />
+        </Route>
         <Route path={URLs.accessories.url}>
             <Accessories />
         </Route>
         <Route path={URLs.complete.url}>
             <Complete />
-        </Route>
-        <Route path={URLs.contacts.url}>
-            <Contacts />
-        </Route>
-        <Route path={URLs.product.url}>
-            <Product />
         </Route>
         <Route path="*">
             <h1>Что-то пошло не так =(</h1>

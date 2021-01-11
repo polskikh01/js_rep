@@ -6,7 +6,8 @@ import {
 } from '../../components/index'
 
 import style from "./style.css";
-import { infoPhoto} from "../../asset/index";
+
+import { URLs } from '../../__data__/urls';
 
 class Main extends React.Component {
     render() {
@@ -33,9 +34,11 @@ class Main extends React.Component {
                                                     </span>
                                                 </div>
                                                 <div className={style.textT}>
-                                                    <span className={style.lSTextA}>
-                                                        Узнать больше
-                                                    </span>
+                                                    <a href={'/js_rep' + URLs.product.url}>
+                                                        <span className={style.lSTextA}>
+                                                            Узнать больше
+                                                        </span>
+                                                    </a>
                                                 </div>
                                             </div>
                                         </div>

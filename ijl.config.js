@@ -74,10 +74,11 @@ module.exports = {
         },
     },
     navigations: {
-        'js_rep': '/js_rep',
-        'link.js_rep.product': '/js_rep/product',
-        'link.js_rep.accessories': '/js_rep/accessories',
-        'link.js_rep.complete': '/js_rep/complete',
-        'link.js_rep.contacts': '/js_rep/contacts',
+        'link.js_rep.main': '/main',
+        'link.js_rep.product': '/product',
+        'link.js_rep.accessories': '/accessories',
+        'link.js_rep.complete': '/complete',
+        'link.js_rep.contacts': '/contacts',
+        'link.js_rep.shippingAndPayment': '/shippingAndPayment',
     }
 }

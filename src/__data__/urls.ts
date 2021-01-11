@@ -6,18 +6,21 @@ export const baseUrl = navigations['js_rep'];
 
 export const URLs = {
     main: {
-        url: '/main',
+        url: navigations['link.js_rep.main'],
     },
     product: {
-        url: '/product',
+        url: navigations['link.js_rep.product'],
     },
     accessories: {
-        url: '/accessories',
+        url: navigations['link.js_rep.accessories'],
     },
     complete: {
-        url: '/complete',
+        url: navigations['link.js_rep.complete'],
     },
     contacts: {
-        url: '/contacts',
+        url: navigations['link.js_rep.contacts'],
+    },
+    shippingAndPayment: {
+        url: navigations['link.js_rep.shippingAndPayment']
     }
 }
