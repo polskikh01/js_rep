@@ -2,6 +2,8 @@
 @import '../../__data__/style/sizes.css';
 
 .m-header {
+    display: flex;
+    flex-direction: row;
     background-color: var(--black-7);
     color: var(--white);
     top: 0;
@@ -9,6 +11,8 @@
 }
 
 .menu-header {
+    display: flex;
+    width: 100%;
     padding-right: var(--offset-md);
     padding-left: var(--offset-md);
     margin-right: auto;
@@ -18,6 +22,7 @@
 .menu {
     display: flex;
     height: 60px;
+    width: 100%;
     padding-right: var(--offset-lg);
     padding-left: var(--offset-lg);
 }

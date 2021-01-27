@@ -9,29 +9,11 @@
 }
 
 .wrap {
-    display: flex;
+    display: grid;
+    grid-template-columns: 50% 50%;
     width: 100vw;
-    height: calc(100vh - 60px - 160px);
+    max-width: 100vw;
     background: var(--white);
     flex-direction: column;
-}
-
-.footer-m {
-    display: flex;
-    align-items: flex-end;
-    background-color: var(--white-9);
-    padding-right: var(--offset-md);
-    padding-left: var(--offset-md);
-    height: 160px;
-}
-
-.footer-container {
-    display: flex;
-    height: 100%;
-    width: calc((100% - 2 * var(--offset-md)) / 4);
-    padding-left: var(--offset-sm);
-
-    span {
-        font-size: 36px;
-    }
+    justify-content: space-between;
 }

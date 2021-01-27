@@ -6,6 +6,8 @@
 }
 
 body {
+    display: flex;
+    flex-direction: row;
     font-family: 'Ubuntu', sans-serif;
     box-sizing: border-box;
     overflow-x: hidden;

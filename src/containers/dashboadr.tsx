@@ -8,8 +8,8 @@ import {
 
 import { URLs } from "../__data__/urls";
 
-import Main from "./main";
-import Product from "./product";
+import Main from "./main/main";
+import Product from "./product/product";
 import Accessories from "./accessories";
 import Complete from "./complete";
 import Contacts from "./contacts";

@@ -1,0 +1,38 @@
+@import '../../__data__/style/colors.css';
+@import '../../__data__/style/sizes.css';
+
+.product {
+    display: flex;
+    height: 500px;
+    background-color: var(--grey);
+    margin: var(--offset-sm);
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    img{
+        display: flex;
+        justify-content: center;
+        height: 300px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+}
+
+.product-title {
+    font-size: 28px;
+}
+
+.product-buy {
+    font-size: 20px;
+    line-height: 1.2;
+    color: var(--blue-2);
+    cursor: pointer;
+}
+
+.product-buy::after {
+    content: ">";
+    color: var(--blue-2);
+}

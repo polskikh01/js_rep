@@ -1,0 +1,43 @@
+@import '../../__data__/style/colors.css';
+@import '../../__data__/style/sizes.css';
+
+.footer-m {
+    display: flex;
+    align-items: flex-end;
+    background-color: var(--white-9);
+    padding-right: var(--offset-md);
+    padding-left: var(--offset-md);
+    height: 160px;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: calc((100% - 2 * var(--offset-md)) / 4);
+    margin-left: var(--offset-sm);
+
+    a {
+        text-decoration: none;
+        margin-top: var(--offset-xs);
+        color: var(--black);
+        opacity: 0.6;
+    }
+
+    span {
+        margin-top: var(--offset-md);
+        font-size: 36px;
+    }
+
+    .title {
+        margin-top: var(--offset-sm);
+        font-size: 20px;
+    }
+
+    .f-c-t {
+        font-size: 14px;
+        opacity: 0.6;
+        cursor: pointer;
+        margin-top: var(--offset-xs);
+    }
+}
