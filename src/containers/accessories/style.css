@@ -1,3 +1,19 @@
 @import '../../__data__/style/colors.css';
 @import '../../__data__/style/sizes.css';
 
+.page {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    background-color: var(--white);
+}
+
+.wrap {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 100vw;
+    max-width: 100vw;
+    background: var(--white);
+    flex-direction: column;
+    justify-content: space-between;
+}

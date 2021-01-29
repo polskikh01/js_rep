@@ -10,8 +10,8 @@ import { URLs } from "../__data__/urls";
 
 import Main from "./main/main";
 import Product from "./product/product";
-import Accessories from "./accessories";
-import Complete from "./complete";
+import Accessories from "./accessories/accessories";
+import Complete from "./complete/complete";
 import Contacts from "./contacts";
 import ShippingAndPayment from "./shippingAndPayment";
 

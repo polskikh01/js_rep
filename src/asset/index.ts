@@ -12,6 +12,19 @@ import simple from './img/product/simple.png';
 import complectation from './img/product/complectation.png';
 import accessories from './img/product/accessories.png';
 
+//accessories
+import killerM from './img/accessories/KillerM.png';
+import glinaClassic from './img/accessories/GlinaClassic.png';
+import glinaMini from './img/accessories/GlinaMini.png';
+
+//complete
+import black from './img/complete/black.png';
+import white from './img/complete/white.png';
+import magnit from './img/complete/magnit.png';
+import connector from './img/complete/connector.png';
+import classicK from './img/complete/classic.png';
+import miniK from './img/complete/mini.png';
+
 export {
     basket,
     infoPhoto,
@@ -20,5 +33,14 @@ export {
     ready,
     simple,
     complectation,
-    accessories
+    accessories,
+    killerM,
+    glinaClassic,
+    glinaMini,
+    black,
+    white,
+    magnit,
+    connector,
+    classicK,
+    miniK
 };

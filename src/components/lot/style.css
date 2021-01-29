@@ -36,3 +36,7 @@
     content: ">";
     color: var(--blue-2);
 }
+
+a {
+    text-decoration: none;
+}
