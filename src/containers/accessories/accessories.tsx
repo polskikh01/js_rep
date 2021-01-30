@@ -6,23 +6,19 @@ import {
     glinaClassic,
     glinaMini
 } from '../../asset/index';
-import {Footer, Head, Lot} from '../../components';
+import {Footer, Head, LotAlt} from '../../components';
 
 class Accessories extends React.Component {
     render() {
         return (
-            <div id={"wrapper"}>
-                <div className={style.focusWrapper} id={"focus-wrapper"}>
-                    <div className={style.page}>
-                        <Head/>
-                        <div className={style.wrap}>
-                            <Lot title={"Killer M"} text={"Купить"} photo={killerM}/>
-                            <Lot title={"Glina Classic"} text={"Купить"} photo={glinaClassic}/>
-                            <Lot title={"Glina Mini"} text={"Купить"} photo={glinaMini}/>
-                        </div>
-                        <Footer/>
-                    </div>
+            <div className={style.page}>
+                <Head/>
+                <div className={style.wrap}>
+                    <LotAlt title={"Killer M"} price={"2750₽"} text={"Купить"} photo={killerM}/>
+                    <LotAlt title={"Glina Classic"} price={"800₽"} text={"Купить"} photo={glinaClassic}/>
+                    <LotAlt title={"Glina Mini"} price={"650₽"} text={"Купить"} photo={glinaMini}/>
                 </div>
+                <Footer/>
             </div>
         );
     }

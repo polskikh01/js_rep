@@ -5,12 +5,13 @@
     display: flex;
     flex-direction: column;
     width: 100vw;
+    height: 100vh;
     background-color: var(--white);
 }
 
 .wrap {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 25% 25% 25% 25%;
     width: 100vw;
     max-width: 100vw;
     background: var(--white);

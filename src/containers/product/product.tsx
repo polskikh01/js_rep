@@ -26,10 +26,10 @@ class Product extends React.Component {
                     <div className={style.page}>
                         <Head/>
                         <div className={style.wrap}>
-                            <Lot title={"Simple"} tagline={"Все гениальное просто"} text={"Купить"} photo={simple}/>
-                            <Lot title={"Classic"} tagline={"Вечная классика"} text={"Купить"} photo={classic}/>
-                            <Lot title={"Mini"} tagline={"Выбор искушенных"} text={"Купить"} photo={mini}/>
-                            <Lot title={"Ready"} tagline={"Твой. Новый."} text={"Купить"} photo={ready}/>
+                            <Lot title={"Simple"} tagline={"Все гениальное просто"} price={"7000₽"} text={"Купить"} photo={simple}/>
+                            <Lot title={"Classic"} tagline={"Вечная классика"} price={"8500₽"} text={"Купить"} photo={classic}/>
+                            <Lot title={"Mini"} tagline={"Выбор искушенных"} price={"6000₽"} text={"Купить"} photo={mini}/>
+                            <Lot title={"Ready"} tagline={"Твой. Новый."} price={"6500₽"} text={"Купить"} photo={ready}/>
                             <Lot title={"Комплектующие"} tagline={"Можете потерять или забыть, но сломать не получится"} to={URLs.complete.url} text={"Узнать больше"} photo={complectation}/>
                             <Lot title={"Аксессуары"} tagline={"Полезная деталь Вашего комфорта"} to={URLs.accessories.url} text={"Узнать больше"} photo={accessories}/>
                         </div>

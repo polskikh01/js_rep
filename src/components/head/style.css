@@ -62,8 +62,8 @@
     cursor: pointer;
 
     img {
-        height: 60px;
-        width: auto;
+        height: 35px;
+        width: 35px;
         object-fit: cover;
     }
 }

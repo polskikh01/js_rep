@@ -1,15 +1,4 @@
-import React, {Component} from 'react';
-
-import {
-    LabeledInput,
-    Button,
-    ButtonColors
-} from '@main/components'
-
-import style from './style.css';
-import {
-    back
-} from '@main/asset/img/logo.png'
+import React from 'react';
 
 class Login extends React.Component {
     render() {

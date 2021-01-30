@@ -2,7 +2,6 @@ import React from "react";
 import {Link} from "react-router-dom";
 
 import style from './style.css';
-import {URLs} from '../../__data__/urls';
 
 interface lotProps {
     title: string,
@@ -13,7 +12,7 @@ interface lotProps {
     photo: any
 }
 
-const Lot: React.FC<lotProps> = ({title,
+const LotAlt: React.FC<lotProps> = ({title,
                                      tagline,
                                      price,
                                      to,
@@ -28,4 +27,4 @@ const Lot: React.FC<lotProps> = ({title,
     </div>
 );
 
-export default Lot;
+export default LotAlt;
