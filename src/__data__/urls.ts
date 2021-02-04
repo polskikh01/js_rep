@@ -22,5 +22,8 @@ export const URLs = {
     },
     shippingAndPayment: {
         url: navigations['link.js_rep.shippingAndPayment']
+    },
+    basket: {
+        url: navigations['link.js_rep.basket']
     }
 }

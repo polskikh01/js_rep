@@ -24,7 +24,7 @@ const Head = () => (
                     <Nav title="Контакты" link={URLs.contacts.url}/>
                 </nav>
                 <div className={style.basket}>
-                    <img src={basket} alt="Basket"/>
+                    <Link to={URLs.basket.url}><img src={basket} alt="Basket"/></Link>
                 </div>
             </div>
         </div>

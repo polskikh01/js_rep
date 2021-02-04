@@ -9,7 +9,7 @@ import {
     classicK,
     miniK
 } from '../../asset/index'
-import {Footer, Head, Lot} from '../../components';
+import {Footer, Head, LotAlt} from '../../components';
 
 class Complete extends React.Component {
     render() {
@@ -19,12 +19,12 @@ class Complete extends React.Component {
                     <div className={style.page}>
                         <Head/>
                         <div className={style.wrap}>
-                            <Lot title={"Шланг белый"} text={"Купить"} photo={white}/>
-                            <Lot title={"Шланг черный"} text={"Купить"} photo={black}/>
-                            <Lot title={"Неодовый магнит"} text={"Купить"} photo={magnit}/>
-                            <Lot title={"Коннектор"} text={"Купить"} photo={connector}/>
-                            <Lot title={"Колба Classc"} text={"Купить"} photo={classicK}/>
-                            <Lot title={"Колба Mini"} text={"Купить"} photo={miniK}/>
+                            <LotAlt title={"Шланг белый"} price={"750₽"} text={"Купить"} photo={white}/>
+                            <LotAlt title={"Шланг черный"} price={"750₽"} text={"Купить"} photo={black}/>
+                            <LotAlt title={"Неодовый магнит"} price={"80₽"} text={"Купить"} photo={magnit}/>
+                            <LotAlt title={"Коннектор"} price={"600₽"} text={"Купить"} photo={connector}/>
+                            <LotAlt title={"Колба Classc"} price={"1200₽"} text={"Купить"} photo={classicK}/>
+                            <LotAlt title={"Колба Mini"} price={"1000₽"} text={"Купить"} photo={miniK}/>
                         </div>
                         <Footer/>
                     </div>

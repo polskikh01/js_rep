@@ -12,8 +12,9 @@ import Main from "./main/main";
 import Product from "./product/product";
 import Accessories from "./accessories/accessories";
 import Complete from "./complete/complete";
-import Contacts from "./contacts";
-import ShippingAndPayment from "./shippingAndPayment";
+import Contacts from "./contacts/contacts";
+import ShippingAndPayment from "./shippingAndPayment/shippingAndPayment";
+import Basket from "./basket/basket"
 
 const Dashboadr = () => (
     <Switch>
@@ -37,6 +38,9 @@ const Dashboadr = () => (
         </Route>
         <Route path={URLs.complete.url}>
             <Complete />
+        </Route>
+        <Route path={URLs.basket.url}>
+            <Basket />
         </Route>
         <Route path="*">
             <h1>Что-то пошло не так =(</h1>

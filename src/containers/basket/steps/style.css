@@ -1,0 +1,75 @@
+@import '../../../__data__/style/colors.css';
+@import '../../../__data__/style/sizes.css';
+
+h1 {
+    font-size: 48px;
+    font-weight: 400;
+    margin-bottom: var(--offset-xs);
+}
+
+.basket {
+    display: flex;
+    flex-direction: column;
+    padding: 0 72px;
+    margin-top: var(--offset-sm);
+}
+
+.decision {
+    display: flex;
+    height: 40px;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: var(--offset-sm);
+
+    a {
+        font-size: 18px;
+        text-decoration: none;
+        color: var(--blue);
+    }
+}
+
+.confirm {
+    display: flex;
+    background-color: var(--blue);
+    color: var(--white);
+    height: 90%;
+    width: 120px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    border-radius: 8px;
+    border-color: var(--blue);
+    margin-left: var(--offset-sm);
+}
+
+.formReg {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.label-info {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    height: 50px;
+    align-items: center;
+    font-size: 20px;
+    margin: var(--offset-sm) var(--offset-xs);
+
+    lable {
+        line-height: 24px;
+    }
+
+    input {
+        display: flex;
+        outline: none;
+        height: 30px;
+        width: 300px;
+    }
+}
+
+.ui-input {
+    border: 1px solid var(--grey-3);
+    border-radius: 2px;
+    padding: 0 16px;
+}

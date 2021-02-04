@@ -1,0 +1,38 @@
+@import '../../__data__/style/colors.css';
+@import '../../__data__/style/sizes.css';
+
+.basket-lot {
+    display: flex;
+    flex-direction: column;
+    padding-top: var(--offset-sm);
+    background-color: var(--grey);
+}
+
+.lot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+        width: 120px;
+        height: 100px;
+    }
+
+    span {
+        font-size: 24px;
+        font-weight: 450;
+        padding-right: var(--offset-md);
+    }
+}
+
+.delete-lot {
+    display: flex;
+    justify-content: flex-end;
+
+    span {
+        font-size: 18px;
+        color: var(--red);
+        padding: 0 var(--offset-md) var(--offset-xs) 0;
+        cursor: pointer;
+    }
+}
