@@ -1,25 +1,20 @@
 import React from 'react';
-import {
-    Switch,
-    Route,
-    Link,
-    Redirect
-} from "react-router-dom";
+import { Switch, Route, Redirect } from 'react-router-dom';
 
-import { URLs } from "../__data__/urls";
+import { URLs } from '../__data__/urls';
 
-import Main from "./main/main";
-import Product from "./product/product";
-import Accessories from "./accessories/accessories";
-import Complete from "./complete/complete";
-import Contacts from "./contacts/contacts";
-import ShippingAndPayment from "./shippingAndPayment/shippingAndPayment";
-import Basket from "./basket/basket"
+import Main from './main/main';
+import Product from './product/product';
+import Accessories from './accessories/accessories';
+import Complete from './complete/complete';
+import Contacts from './contacts/contacts';
+import ShippingAndPayment from './shippingAndPayment/shippingAndPayment';
+import Basket from './basket/basket';
 
 const Dashboadr = () => (
     <Switch>
         <Route exact path="/">
-            <Redirect to={URLs.main.url}/>
+            <Redirect to={URLs.main.url} />
         </Route>
         <Route path={URLs.main.url}>
             <Main />

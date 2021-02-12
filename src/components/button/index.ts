@@ -3,6 +3,4 @@ import { ButtonColors } from './model';
 
 export default Button;
 
-export {
-    ButtonColors
-};
+export { ButtonColors };

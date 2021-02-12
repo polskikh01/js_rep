@@ -6,9 +6,9 @@ import style from './style.css';
 interface NavProps {
     title: string;
     link?: string;
-};
+}
 
-const Nav: React.FC<NavProps> = ({ title, link}) => (
+const Nav: React.FC<NavProps> = ({ title, link }) => (
     <Link className={style.navButt} to={link}>
         <span>{title}</span>
     </Link>

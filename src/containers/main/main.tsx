@@ -1,36 +1,31 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
-import {
-    Head
-} from '../../components/index'
+import { Head } from '../../components/index';
 
-import style from "./style.css";
+import style from './style.css';
 
 import { URLs } from '../../__data__/urls';
 
 class Main extends React.Component {
     render() {
         return (
-            <div id={"wrapper"}>
-                <div className={style.focusWrapper} id={"focus-wrapper"}>
+            <div id={'wrapper'}>
+                <div className={style.focusWrapper} id={'focus-wrapper'}>
                     <div className={style.page}>
-                        <Head/>
+                        <Head />
                         <div className={style.wrap}>
                             <div className={style.line}>
                                 <section>
                                     <div className={style.info}>
-                                        <div className={style.infoPhoto}/>
+                                        <div className={style.infoPhoto} />
                                         <div className={style.infoText}>
                                             <div className={style.text}>
                                                 <div className={style.textT}>
-                                                    <span className={style.lSText}>
-                                                        Calabash
-                                                    </span>
+                                                    <span className={style.lSText}>Calabash</span>
                                                 </div>
                                                 <div className={style.textT}>
                                                     <span className={style.lSTextB}>
-                                                        Твоя очередь <br/> создавать стиль
+                                                        Твоя очередь <br /> создавать стиль
                                                     </span>
                                                 </div>
                                                 <div className={style.textT}>
@@ -51,6 +46,6 @@ class Main extends React.Component {
             </div>
         );
     }
-};
+}
 
 export default Main;

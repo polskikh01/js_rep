@@ -21,9 +21,9 @@ export const URLs = {
         url: navigations['link.js_rep.contacts'],
     },
     shippingAndPayment: {
-        url: navigations['link.js_rep.shippingAndPayment']
+        url: navigations['link.js_rep.shippingAndPayment'],
     },
     basket: {
-        url: navigations['link.js_rep.basket']
-    }
-}
+        url: navigations['link.js_rep.basket'],
+    },
+};

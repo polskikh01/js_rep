@@ -1,11 +1,11 @@
-import React from "react";
+import React from 'react';
 
-import Step1 from "./steps/step1";
-import Step2 from "./steps/step2";
+import Step1 from './steps/step1';
+import Step2 from './steps/step2';
 
-import { BasketStep, StageProps } from "./steps/model";
-import { useStages } from "../../hooks";
-import { BasketPage } from "../../components";
+import { BasketStep, StageProps } from './steps/model';
+import { useStages } from '../../hooks';
+import { BasketPage } from '../../components';
 
 const steps = {
     [BasketStep.STEP1]: {
@@ -21,13 +21,12 @@ const steps = {
 function Basket() {
     const [currentStep, nextStep] = useStages(steps, BasketStep.STEP1);
     const Stage: React.FC<StageProps> = steps[currentStep].component;
-    const info = steps[currentStep].info;
 
     return (
         <BasketPage>
             <Stage nextStep={nextStep} />
         </BasketPage>
-    )
-};
+    );
+}
 
 export default Basket;

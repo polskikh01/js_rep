@@ -1,3 +1,3 @@
-import LotAlt from "./lotAlt";
+import LotAlt from './lotAlt';
 
 export default LotAlt;

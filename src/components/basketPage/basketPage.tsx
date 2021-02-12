@@ -1,18 +1,14 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from 'react';
 
-import style from "./style.css";
+import style from './style.css';
 
-import {Footer, Head} from "../../components";
-import { URLs } from "../../__data__/urls";
+import { Footer, Head } from '../../components';
 
-const BasketPage: React.FC = ({children}) => (
+const BasketPage: React.FC = ({ children }) => (
     <div className={style.page}>
-        <Head/>
-        <div className={style.wrap}>
-            {children}
-        </div>
-        <Footer/>
+        <Head />
+        <div className={style.wrap}>{children}</div>
+        <Footer />
     </div>
 );
 

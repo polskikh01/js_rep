@@ -1,11 +1,11 @@
 //global
-import basket from "./img/basket.png";
+import basket from './img/basket.png';
 
 //main
-import infoPhoto from "./img/main/info-photo.png";
+import infoPhoto from './img/main/info-photo.png';
 
 //product
-import classic from "./img/product/classic.png";
+import classic from './img/product/classic.png';
 import mini from './img/product/mini.png';
 import ready from './img/product/ready.png';
 import simple from './img/product/simple.png';
@@ -42,5 +42,5 @@ export {
     magnit,
     connector,
     classicK,
-    miniK
+    miniK,
 };
