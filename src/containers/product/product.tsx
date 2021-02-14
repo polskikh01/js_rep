@@ -6,6 +6,7 @@ import { Head, Footer, Lot } from '../../components/index';
 import { classic, mini, ready, simple, accessories, complectation } from '../../asset/index';
 
 import { URLs } from '../../__data__/urls';
+import i18next from 'i18next';
 
 class Product extends React.Component {
     render() {
@@ -17,44 +18,44 @@ class Product extends React.Component {
                         <div className={style.wrap}>
                             <Lot
                                 title={'Simple'}
-                                tagline={'Все гениальное просто'}
+                                tagline={i18next.t('js_rep.product.taglineSimple')}
                                 price={'7000₽'}
-                                text={'Купить'}
+                                text={i18next.t('js_rep.BUY')}
                                 photo={simple}
                             />
                             <Lot
                                 title={'Classic'}
-                                tagline={'Вечная классика'}
+                                tagline={i18next.t('js_rep.product.taglineClassic')}
                                 price={'8500₽'}
-                                text={'Купить'}
+                                text={i18next.t('js_rep.BUY')}
                                 photo={classic}
                             />
                             <Lot
                                 title={'Mini'}
-                                tagline={'Выбор искушенных'}
+                                tagline={i18next.t('js_rep.product.taglineMini')}
                                 price={'6000₽'}
-                                text={'Купить'}
+                                text={i18next.t('js_rep.BUY')}
                                 photo={mini}
                             />
                             <Lot
                                 title={'Ready'}
-                                tagline={'Твой. Новый.'}
+                                tagline={i18next.t('js_rep.product.taglineReady')}
                                 price={'6500₽'}
-                                text={'Купить'}
+                                text={i18next.t('js_rep.BUY')}
                                 photo={ready}
                             />
                             <Lot
-                                title={'Комплектующие'}
-                                tagline={'Можете потерять или забыть, но сломать не получится'}
+                                title={i18next.t('js_rep.COMPLETE')}
+                                tagline={i18next.t('js_rep.product.taglineComplete')}
                                 to={URLs.complete.url}
-                                text={'Узнать больше'}
+                                text={i18next.t('js_rep.MORE')}
                                 photo={complectation}
                             />
                             <Lot
-                                title={'Аксессуары'}
-                                tagline={'Полезная деталь Вашего комфорта'}
+                                title={i18next.t('js_rep.ACCESSORIES')}
+                                tagline={i18next.t('js_rep.product.taglineAccessories')}
                                 to={URLs.accessories.url}
-                                text={'Узнать больше'}
+                                text={i18next.t('js_rep.MORE')}
                                 photo={accessories}
                             />
                         </div>

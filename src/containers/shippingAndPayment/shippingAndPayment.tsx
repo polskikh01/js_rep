@@ -2,6 +2,7 @@ import React from 'react';
 
 import style from './style.css';
 import { Footer, Head } from '../../components';
+import i18next from 'i18next';
 
 class ShippingAndPayment extends React.Component {
     render() {
@@ -9,43 +10,40 @@ class ShippingAndPayment extends React.Component {
             <div className={style.page}>
                 <Head />
                 <div className={style.wrap}>
-                    <h1>Информация о доставке и оплате</h1>
+                    <h1>{i18next.t('js_rep.sAP.info')}</h1>
                     <div className={style.delivery}>
-                        <span className={style.title}>Доставка</span>
+                        <span className={style.title}>{i18next.t('js_rep.sAP.delivery')}</span>
                         <h5 style={{ paddingTop: '12px', paddingBottom: '12px', fontSize: '16px' }}>
-                            По России:
+                            {i18next.t('js_rep.sAP.delivery.locale')}
                         </h5>
                         <div style={{ paddingLeft: '18px' }}>
                             <ul>
-                                <li>Транспортной компанией СДЭК при наличии терминала в городе;</li>
-                                <li>Почтой России;</li>
-                                <li>Курьерской службой EMS;</li>
+                                <li>{i18next.t('js_rep.sAP.delivery.SDEK')}</li>
+                                <li>{i18next.t('js_rep.sAP.delivery.MAIL')}</li>
+                                <li>{i18next.t('js_rep.sAP.delivery.EMS')}</li>
                             </ul>
                         </div>
                         <h5 style={{ paddingTop: '12px', paddingBottom: '12px', fontSize: '16px' }}>
-                            Самовывоз:
+                            {i18next.t('js_rep.sAP.pickup')}
                         </h5>
                         <div style={{ paddingLeft: '18px' }}>
                             <ul>
-                                <li>Со склада: г. Москва, Красная площадь</li>
+                                <li>{i18next.t('js_rep.sAP.pickup.store')}</li>
                             </ul>
                         </div>
                     </div>
                     <div className={style.payment}>
-                        <span className={style.title}>Оплата</span>
+                        <span className={style.title}>{i18next.t('js_rep.sAP.payment')}</span>
                         <h5 style={{ paddingTop: '12px', paddingBottom: '12px', fontSize: '16px' }}>
-                            Способ оплаты заказа в Интернет-магазине:
+                            {i18next.t('js_rep.sAP.payment.online')}
                         </h5>
                         <div style={{ paddingLeft: '18px' }}>
                             <ul>
                                 <li>
-                                    Электронным платежом через систему ROBOKASSA: Apple Pay, VISA,
-                                    MasterCard, PayPal;
+                                    {i18next.t('js_rep.sAP.payment.online.EL')}
                                 </li>
                                 <li>
-                                    Безналичный расчёт для юридических лиц и индивидуальных
-                                    предпринимателей (если Вы зарегистрировались и авторизовались
-                                    как ИП или юридическое лицо).
+                                    {i18next.t('js_rep.sAP.payment.online.BN')}
                                 </li>
                             </ul>
                         </div>

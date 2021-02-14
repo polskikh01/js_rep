@@ -1,4 +1,56 @@
 {
+  "js_rep.MORE": "Узнать больше",
+  "js_rep.BUY": "Купить",
+
+  "js_rep.PRODUCT": "Продукты",
+  "js_rep.SAP": "Доставка и оплата",
+  "js_rep.CONTACTS": "Контакты",
+
+  "js_rep.HOOKAH": "Кальяны",
+  "js_rep.ACCESSORIES": "Аксессуары",
+  "js_rep.COMPLETE": "Комплектующие",
+
+  "js_rep.acc": "Аккаунт",
+  "js_rep.lk": "Личный кабинет",
+  "js_rep.help": "Помощь",
+
   "js_rep.main.tagline1": "Твоя очередь",
-  "js_rep.main.tagline2": "создавать стиль"
+  "js_rep.main.tagline2": "создавать стиль",
+
+  "js_rep.complete.hoseW": "Шланг белый",
+  "js_rep.complete.hoseB": "Шланг черный",
+  "js_rep.complete.magnet": "Неодовый магнит",
+  "js_rep.complete.connector": "Коннектор",
+  "js_rep.complete.flaskC": "Колба Classic",
+  "js_rep.complete.flaskM": "Колба Mini",
+
+  "js_rep.contacts.qq1": "С удовольствием ответим на Ваши вопросы с 9:00 до 17:00",
+  "js_rep.contacts.qq2": "по московскому времени",
+  "js_rep.contacts.guarantee": "По вопросам гарантийного обслуживания",
+  "js_rep.contacts.cooperation": "По вопросам сотрудничества",
+  "js_rep.contacts.cooperation.FIO": "Иван Иванов",
+  "js_rep.contacts.address": "Адрес",
+  "js_rep.contacts.GPS": "г. Москва, Красная площадь",
+  "js_rep.contacts.newsT": "Новостной канал в Telegram",
+  "js_rep.contacts.chatT": "Чат с нами в Telegram",
+
+  "js_rep.product.taglineSimple": "Все гениальное просто",
+  "js_rep.product.taglineClassic": "Вечная классика",
+  "js_rep.product.taglineMini": "Выбор искушенных",
+  "js_rep.product.taglineReady": "Твой. Новый.",
+  "js_rep.product.taglineComplete": "Можете потерять или забыть, но сломать не получится",
+  "js_rep.product.taglineAccessories": "Полезная деталь Вашего комфорта",
+
+  "js_rep.sAP.info": "Информация о доставке и оплате",
+  "js_rep.sAP.delivery": "Доставка:",
+  "js_rep.sAP.delivery.locale": "По России:",
+  "js_rep.sAP.delivery.SDEK": "Транспортной компанией СДЭК при наличии терминала в городе;",
+  "js_rep.sAP.delivery.MAIL": "Почтой России;",
+  "js_rep.sAP.delivery.EMS": "Курьерской службой EMS;",
+  "js_rep.sAP.pickup": "Самовывоз:",
+  "js_rep.sAP.pickup.store": "Со склада: г. Москва, Красная площадь",
+  "js_rep.sAP.payment": "Оплата",
+  "js_rep.sAP.payment.online": "Способ оплаты заказа в Интернет-магазине:",
+  "js_rep.sAP.payment.online.EL": "Электронным платежом через систему ROBOKASSA: Apple Pay, VISA, MasterCard, PayPal;",
+  "js_rep.sAP.payment.online.BN": "Безналичный расчёт для юридических лиц и индивидуальных предпринимателей (если Вы зарегистрировались и авторизовались как ИП или юридическое лицо)."
 }

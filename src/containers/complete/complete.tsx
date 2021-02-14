@@ -3,6 +3,8 @@ import React from 'react';
 import style from './style.css';
 import { white, black, magnit, connector, classicK, miniK } from '../../asset/index';
 import { Footer, Head, LotAlt } from '../../components';
+import i18next from 'i18next';
+import {I18nContext} from "react-i18next";
 
 class Complete extends React.Component {
     render() {
@@ -13,39 +15,39 @@ class Complete extends React.Component {
                         <Head />
                         <div className={style.wrap}>
                             <LotAlt
-                                title={'Шланг белый'}
+                                title={i18next.t('js_rep.complete.hoseW')}
                                 price={'750₽'}
-                                text={'Купить'}
+                                text={i18next.t('js_rep.BUY')}
                                 photo={white}
                             />
                             <LotAlt
-                                title={'Шланг черный'}
+                                title={i18next.t('js_rep.complete.hoseB')}
                                 price={'750₽'}
-                                text={'Купить'}
+                                text={i18next.t('js_rep.BUY')}
                                 photo={black}
                             />
                             <LotAlt
-                                title={'Неодовый магнит'}
+                                title={i18next.t('js_rep.complete.magnet')}
                                 price={'80₽'}
-                                text={'Купить'}
+                                text={i18next.t('js_rep.BUY')}
                                 photo={magnit}
                             />
                             <LotAlt
-                                title={'Коннектор'}
+                                title={i18next.t('js_rep.complete.connector')}
                                 price={'600₽'}
-                                text={'Купить'}
+                                text={i18next.t('js_rep.BUY')}
                                 photo={connector}
                             />
                             <LotAlt
-                                title={'Колба Classc'}
+                                title={i18next.t('js_rep.complete.flaskC')}
                                 price={'1200₽'}
-                                text={'Купить'}
+                                text={i18next.t('js_rep.BUY')}
                                 photo={classicK}
                             />
                             <LotAlt
-                                title={'Колба Mini'}
+                                title={i18next.t('js_rep.complete.flaskM')}
                                 price={'1000₽'}
-                                text={'Купить'}
+                                text={i18next.t('js_rep.BUY')}
                                 photo={miniK}
                             />
                         </div>

@@ -6,10 +6,11 @@ import style from './style.css';
 
 import {URLs} from '../../__data__/urls';
 import { useTranslation } from 'react-i18next';
+import i18next from 'i18next';
 import { Link } from 'react-router-dom';
 
 function Main() {
-    const { t, i18n } = useTranslation();
+    // const { t, i18n } = useTranslation();
 
     return (
         <div id={'wrapper'}>
@@ -28,13 +29,13 @@ function Main() {
                                             </div>
                                             <div className={style.textT}>
                                                     <span className={style.lSTextB}>
-                                                        {t('js_rep.main.tagline1')} <br/> создавать стиль
+                                                        {i18next.t('js_rep.main.tagline1')} <br/> {i18next.t('js_rep.main.tagline2')}
                                                     </span>
                                             </div>
                                             <div className={style.textT}>
                                                 <Link to={URLs.product.url}>
                                                         <span className={style.lSTextA}>
-                                                            Узнать больше
+                                                            {i18next.t('js_rep.MORE')}
                                                         </span>
                                                 </Link>
                                             </div>
