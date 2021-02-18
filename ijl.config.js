@@ -81,5 +81,8 @@ module.exports = {
         'link.js_rep.contacts': '/contacts',
         'link.js_rep.shippingAndPayment': '/shippingAndPayment',
         'link.js_rep.basket': '/basket'
+    },
+    config: {
+        'js_rep.api': '/api'
     }
 }

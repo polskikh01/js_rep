@@ -22,6 +22,7 @@
   "homepage": "https://polskikh01@bitbucket.org/polskikh01/js_rep#readme",
   "dependencies": {
     "@ijl/cli": "2.5.6",
+    "animated-scroll-to": "^2.0.12",
     "classnames": "^2.2.6",
     "csstype": "^3.0.5",
     "eslint-config": "^0.3.0",
@@ -38,11 +39,14 @@
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
     "redux": "^4.0.5",
+    "redux-logger": "^3.0.6",
     "typescript": "^4.0.5"
   },
   "devDependencies": {
+    "@reduxjs/toolkit": "^1.5.0",
     "@types/react": "^16.9.56",
     "@types/react-dom": "^16.9.9",
+    "@types/react-redux": "^7.1.16",
     "@types/react-router-dom": "^5.1.6",
     "@typescript-eslint/eslint-plugin": "^4.15.0",
     "@typescript-eslint/parser": "^4.15.0",
