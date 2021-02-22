@@ -7,19 +7,19 @@ interface lotProps {
     title: string;
     tagline?: string;
     price?: string;
-    to?: string;
+    click: any;
     text: string;
     photo: any;
 }
 
-const Lot: React.FC<lotProps> = ({ title, tagline, price, to = '/', text, photo }) => (
+const Lot: React.FC<lotProps> = ({ title, tagline, price, click, text, photo }) => (
     <div className={style.product}>
         <span className={style.productTitle}>{title}</span>
         <p>{tagline}</p>
         <span>{price}</span>
-        <Link to={to}>
+        <button onClick={click}>
             <span className={style.productBuy}>{text}</span>
-        </Link>
+        </button>
         <img src={photo} />
     </div>
 );

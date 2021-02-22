@@ -1,0 +1,31 @@
+{
+  "status": {
+    "code": 0
+  },
+  "products": [
+      {
+        "title": "Simple",
+        "tagline": "js_rep.product.taglineSimple",
+        "price": "7000",
+        "photo": "simple"
+      },
+      {
+        "title": "Classic",
+        "tagline": "js_rep.product.taglineClassic",
+        "price": "8500",
+        "photo": "classic"
+      },
+      {
+        "title": "Mini",
+        "tagline": "js_rep.product.taglineMini",
+        "price": "6000",
+        "photo": "mini"
+      },
+      {
+        "title": "Ready",
+        "tagline": "js_rep.product.taglineReady",
+        "price": "6500",
+        "photo": "ready"
+      }
+    ]
+}

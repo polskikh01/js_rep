@@ -3,7 +3,7 @@
 
 .product {
     display: flex;
-    height: 300px;
+    height: 500px;
     background-color: var(--grey);
     margin: var(--offset-sm);
     flex-direction: column;
@@ -13,8 +13,7 @@
     img{
         display: flex;
         justify-content: center;
-        height: 180px;
-        width: 250px;
+        height: 300px;
     }
 
     p {
@@ -42,8 +41,6 @@
     color: var(--blue-2);
 }
 
-button {
-    border: none;
-    outline: none;
-    background-color: inherit;
+a {
+    text-decoration: none;
 }

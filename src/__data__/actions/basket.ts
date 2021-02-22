@@ -3,9 +3,9 @@ import { getConfigValue } from '@ijl/cli';
 
 import * as types from '../action-types';
 
-const submitActionCreator = () => ({ type: types.TRANSPORT.REQUEST });
-const successActionCreator = (items) => ({ type: types.TRANSPORT.SUCCESS, payload: items });
-const errorActionCreator = (error) => ({ type: types.TRANSPORT.FAILURE, payload: error });
+const submitActionCreator = () => ({ type: types.BASKET.REQUEST });
+const successActionCreator = (items) => ({ type: types.BASKET.SUCCESS, payload: items });
+const errorActionCreator = (error) => ({ type: types.BASKET.FAILURE, payload: error });
 
 export const addProduct = product => async (dispatch) => {
     const baseApiUrl = getConfigValue('js_rep.api');
@@ -14,19 +14,20 @@ export const addProduct = product => async (dispatch) => {
     try {
         const response = await axios.post(`${baseApiUrl}/addProduct`, {product});
         console.log(response);
-        dispatch(successActionCreator(response.data.items));
+        dispatch(successActionCreator(response.data.basket));
     } catch (error) {
         dispatch(errorActionCreator('Неизвестная ошибка'));
     }
 };
 
-export const getProducts = () => async (dispatch) => {
+export const getBasket = () => async (dispatch) => {
     const baseApiUrl = getConfigValue('js_rep.api');
 
     dispatch(submitActionCreator());
     try {
-        const response = await axios.get(`${baseApiUrl}/getProducts`);
-        dispatch(successActionCreator(response.data.items));
+        const response = await axios.get(`${baseApiUrl}/getBasket`);
+        console.log(response);
+        dispatch(successActionCreator(response.data.basket));
     } catch (error) {
         dispatch(errorActionCreator('Неизвестная ошибка'));
     }

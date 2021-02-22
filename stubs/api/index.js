@@ -5,18 +5,20 @@ const TWO_SECONDS = 2000;
 const wait = (time = TWO_SECONDS) => (req, res, next) =>
     setTimeout(next, time);
 
-const items = [
-
-]
+const basket = []
 
 router.post('/addProduct',  (req, res) => {
     const data = req.body.product;
-    items.push(data);
-    res.send({items});
+    basket.push(data);
+    res.send({basket});
 });
 
 router.get('/getProducts',  (req, res) => {
-    res.send({items});
+    res.send(require('./mocks/product/success.json'));
+});
+
+router.get('/getBasket',  (req, res) => {
+    res.send({basket});
 });
 
 module.exports = router;

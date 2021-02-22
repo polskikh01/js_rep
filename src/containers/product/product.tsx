@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 
 import style from './style.css';
-import {Head, Footer, Lot} from '../../components/index';
+import {Head, Footer, Lot, LotMore} from '../../components/index';
 
 import {classic, mini, ready, simple, accessories, complectation} from '../../asset/index';
 
@@ -9,37 +9,13 @@ import {URLs} from '../../__data__/urls';
 import i18next from 'i18next';
 
 import {connect} from 'react-redux';
-import {addProduct, getProducts} from "../../__data__/actions/transport";
-
-const lots = [
-    {
-        title: 'Simple',
-        tagline: i18next.t('js_rep.product.taglineSimple'),
-        price: '7000₽',
-        photo: simple
-    },
-    {
-        title: 'Classic',
-        tagline: i18next.t('js_rep.product.taglineClassic'),
-        price: '8500₽',
-        photo: classic
-    },
-    {
-        title: 'Mini',
-        tagline: i18next.t('js_rep.product.taglineMini'),
-        price: '6000₽',
-        photo: mini
-    },
-    {
-        title: 'Ready',
-        tagline: i18next.t('js_rep.product.taglineReady'),
-        price: '6500₽',
-        photo: ready
-    },
-]
+import { getProducts } from "../../__data__/actions/product";
+import { addProduct } from "../../__data__/actions/basket";
+import { getImgByName } from '../../utils'
 
 type MapStateToProps = {
-    productItems: any
+    productItems: any,
+    loading: boolean
 }
 type MapDispatchToProps = {
     addProduct(item: any): () => void;
@@ -47,12 +23,16 @@ type MapDispatchToProps = {
 };
 type ProductProps =  MapDispatchToProps & MapStateToProps;
 
-function Product({ addProduct, productItems, getProducts }: React.PropsWithChildren<ProductProps>) {
+function Product({ addProduct, productItems, getProducts, loading }: React.PropsWithChildren<ProductProps>) {
     useEffect(() => {
         getProducts()
     }, [])
 
     console.log(productItems);
+
+    if (loading) {
+        return <p>loading...</p>
+    }
 
     return (
         <div id={'wrapper'}>
@@ -60,20 +40,20 @@ function Product({ addProduct, productItems, getProducts }: React.PropsWithChild
                 <div className={style.page}>
                     <Head/>
                     <div className={style.wrap}>
-                        {lots.map((lot, index) => (
-                            <span key={index} onClick={() => addProduct(lot)}>
-                                <Lot title={lot.title} tagline={lot.tagline} price={lot.price}
-                                     text={i18next.t('js_rep.BUY')} photo={lot.photo}/>
+                        {productItems.map((lot, index) => (
+                            <span key={index}>
+                                <Lot title={lot.title} tagline={i18next.t(lot.tagline)} price={lot.price}
+                                     text={i18next.t('js_rep.BUY')} click={() => addProduct(lot)} photo={getImgByName(lot.photo)}/>
                             </span>
                         ))}
-                        <Lot
+                        <LotMore
                             title={i18next.t('js_rep.COMPLETE')}
                             tagline={i18next.t('js_rep.product.taglineComplete')}
                             to={URLs.complete.url}
                             text={i18next.t('js_rep.MORE')}
                             photo={complectation}
                         />
-                        <Lot
+                        <LotMore
                             title={i18next.t('js_rep.ACCESSORIES')}
                             tagline={i18next.t('js_rep.product.taglineAccessories')}
                             to={URLs.accessories.url}
@@ -88,8 +68,9 @@ function Product({ addProduct, productItems, getProducts }: React.PropsWithChild
     );
 }
 
-const mapStateToProps = (state): any => ({
-    productItems: state.product.productItems
+const mapStateToProps = (state): MapStateToProps => ({
+    productItems: state.product.productItems,
+    loading: state.product.loading
 })
 
 const mapDispatchToProps = (dispatch): MapDispatchToProps => ({

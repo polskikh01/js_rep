@@ -41,6 +41,8 @@
     color: var(--blue-2);
 }
 
-a {
-    text-decoration: none;
+button {
+    border: none;
+    outline: none;
+    background-color: inherit;
 }

@@ -1,5 +1,4 @@
-import * as types from '../../../action-types';
-import { addItem } from './utils.js';
+import * as types from '../../action-types';
 
 export type ProductState = {
     productItems: [],
@@ -21,11 +20,11 @@ const handleFailure = (state, action) => ({ ...state, loading: false });
 
 export default function (state = initialState, action) {
     switch (action.type) {
-        case types.TRANSPORT.REQUEST:
+        case types.PRODUCT.REQUEST:
             return handleSubmit(state, action);
-        case types.TRANSPORT.SUCCESS:
+        case types.PRODUCT.SUCCESS:
             return handleSuccess(state, action);
-        case types.TRANSPORT.FAILURE:
+        case types.PRODUCT.FAILURE:
             return handleFailure(state, action);
         default:
             return state;

@@ -1,17 +1,42 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import style from './style.css';
 import { Link } from 'react-router-dom';
 import { URLs } from '../../../__data__/urls';
 import { BasketLot } from '../../../components';
 
-import { classic } from '../../../asset';
+import { connect } from "react-redux";
 
-function Basket({ nextStep }) {
+import { classic } from '../../../asset';
+import { getImgByName } from '../../../utils'
+
+import {getBasket} from "../../../__data__/actions/basket";
+
+type MapStateToProps = {
+    loading: boolean
+    basket: any,
+    nextStep: any
+}
+type MapDispatchToProps = {
+    getBasket(): () => void;
+};
+type ProductProps =  MapDispatchToProps & MapStateToProps;
+
+function Basket({ basket, loading, getBasket ,nextStep }: React.PropsWithChildren<ProductProps>) {
+    useEffect(() => {
+        getBasket()
+    }, [])
+
+    if(loading) {
+        return <p>loading...</p>
+    }
+
     return (
         <div className={style.basket}>
             <h1>Корзина</h1>
-            <BasketLot img={classic} title={'Classic'} price={'8000'} />
+            {basket.map((lot, index) => (
+                <BasketLot key={index} img={getImgByName(lot.photo)} title={lot.title} price={lot.price}/>
+            ))}
             <div className={style.decision}>
                 <Link to={URLs.product.url}>Вернуться к покупкам</Link>
                 <button onClick={() => nextStep()} className={style.confirm}>
@@ -22,4 +47,13 @@ function Basket({ nextStep }) {
     );
 }
 
-export default Basket;
+const mapStateToProps = (state): any => ({
+    basket: state.basket.basket,
+    loading: state.basket.loading
+})
+
+const mapDispatchToProps = (dispatch): MapDispatchToProps => ({
+    getBasket: () => dispatch(getBasket())
+})
+
+export default connect(mapStateToProps, mapDispatchToProps)(Basket);

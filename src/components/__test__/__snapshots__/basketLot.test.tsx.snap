@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<BasketLot/> Отрисовывется без ошибок 1`] = `
+<BasketLot
+  img="FILE_MOCK"
+  price="OOooOOooOoOo"
+  title="PRODUCT"
+>
+  <div
+    className="basketLot"
+  >
+    <div
+      className="lot"
+    >
+      <img
+        src="FILE_MOCK"
+      />
+      <span>
+        PRODUCT
+      </span>
+      <span>
+        OOooOOooOoOo
+        ₽
+      </span>
+    </div>
+    <div
+      className="deleteLot"
+    >
+      <span>
+        Удалить
+      </span>
+    </div>
+  </div>
+</BasketLot>
+`;
