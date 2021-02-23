@@ -17,6 +17,14 @@ router.get('/getProducts',  (req, res) => {
     res.send(require('./mocks/product/success.json'));
 });
 
+router.get('/getAccessories',  (req, res) => {
+    res.send(require('./mocks/accessories/success.json'));
+});
+
+router.get('/getComplete', (req, res) => {
+    res.send(require('./mocks/complete/success.json'));
+})
+
 router.get('/getBasket',  (req, res) => {
     res.send({basket});
 });

@@ -1,0 +1,165 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Тестирование всего приложения Тестируем рендер Main 1`] = `
+<Provider
+  store={
+    Object {
+      "dispatch": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+      Symbol(observable): [Function],
+    }
+  }
+>
+  <Main>
+    <div
+      id="wrapper"
+    >
+      <div
+        className="focusWrapper"
+        id="focus-wrapper"
+      >
+        <div
+          className="page"
+        >
+          <Head>
+            <header
+              className="mHeader"
+            >
+              <div
+                className="menuHeader"
+              >
+                <div
+                  className="menu"
+                >
+                  <Link
+                    className="logo"
+                    to="/main"
+                  >
+                    <a>
+                      mock link
+                    </a>
+                  </Link>
+                  <nav
+                    className="navP"
+                  >
+                    <Nav
+                      link="/product"
+                      title="Продукты"
+                    >
+                      <Link
+                        className="navButt"
+                        to="/product"
+                      >
+                        <a>
+                          mock link
+                        </a>
+                      </Link>
+                    </Nav>
+                    <Nav
+                      link="/shippingAndPayment"
+                      title="Доставка и оплата"
+                    >
+                      <Link
+                        className="navButt"
+                        to="/shippingAndPayment"
+                      >
+                        <a>
+                          mock link
+                        </a>
+                      </Link>
+                    </Nav>
+                    <Nav
+                      link="/contacts"
+                      title="Контакты"
+                    >
+                      <Link
+                        className="navButt"
+                        to="/contacts"
+                      >
+                        <a>
+                          mock link
+                        </a>
+                      </Link>
+                    </Nav>
+                  </nav>
+                  <div
+                    className="basket"
+                  >
+                    <Link
+                      to="/basket"
+                    >
+                      <a>
+                        mock link
+                      </a>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </header>
+          </Head>
+          <div
+            className="wrap"
+          >
+            <div
+              className="line"
+            >
+              <section>
+                <div
+                  className="info"
+                >
+                  <div
+                    className="infoPhoto"
+                  />
+                  <div
+                    className="infoText"
+                  >
+                    <div
+                      className="text"
+                    >
+                      <div
+                        className="textT"
+                      >
+                        <span
+                          className="lSText"
+                        >
+                          Calabash
+                        </span>
+                      </div>
+                      <div
+                        className="textT"
+                      >
+                        <span
+                          className="lSTextB"
+                        >
+                          Твоя очередь
+                           
+                          <br />
+                           
+                          создавать стиль
+                        </span>
+                      </div>
+                      <div
+                        className="textT"
+                      >
+                        <Link
+                          to="/product"
+                        >
+                          <a>
+                            mock link
+                          </a>
+                        </Link>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </Main>
+</Provider>
+`;

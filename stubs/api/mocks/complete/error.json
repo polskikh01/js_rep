@@ -1,0 +1,13 @@
+{
+  "status": {
+    "code": 2
+  },
+  "errors": [
+    {
+      "title": "Calabash",
+      "tagline": "Failed to set values",
+      "price": "----",
+      "photo": " "
+    }
+  ]
+}

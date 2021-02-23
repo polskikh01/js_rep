@@ -1,54 +1,42 @@
 import React, {useEffect} from 'react';
 
 import style from './style.css';
-import {killerM, glinaClassic, glinaMini} from '../../asset/index';
-import {Footer, Head, Lot, LotAlt} from '../../components';
+import {Footer, Head, LotAlt} from '../../components';
 
 import i18next from 'i18next';
-import {addProduct, getProducts} from "../../__data__/actions/product";
+import {getAccessories} from '../../__data__/actions/accessories';
+import {addProduct} from '../../__data__/actions/basket';
+import {getImgByName} from '../../utils';
 import {connect} from "react-redux";
 
-const accessories = [
-    {
-        title: 'Killer M',
-        price: '2750₽',
-        photo: killerM
-    },
-    {
-        title: 'Glina Classic',
-        price: '800₽',
-        photo: glinaClassic
-    },
-    {
-        title: 'Glina Mini',
-        price: '650₽',
-        photo: glinaMini
-    }
-]
-
 type MapStateToProps = {
-    productItems: any
+    productItems: any,
+    loading: boolean
 }
 type MapDispatchToProps = {
     addProduct(item: any): () => void;
-    getProducts(): () => void;
+    getAccessories(): () => void;
 };
-type ProductProps =  MapDispatchToProps & MapStateToProps;
+type ProductProps = MapDispatchToProps & MapStateToProps;
 
-function Accessories({ addProduct, productItems, getProducts }: React.PropsWithChildren<ProductProps>) {
+function Accessories({addProduct, productItems, getAccessories, loading}: React.PropsWithChildren<ProductProps>) {
     useEffect(() => {
-        getProducts()
+        getAccessories()
     }, [])
 
-    console.log(productItems);
+    if (loading) {
+        return <p>loading...</p>
+    }
+
     return (
         <div className={style.page}>
             <Head/>
             <div className={style.wrap}>
-                {accessories.map((lot, index) => (
+                {productItems.map((lot, index) => (
                     <span key={index}>
                                 <LotAlt title={i18next.t(lot.title)} price={lot.price}
-                                     text={i18next.t('js_rep.BUY')} click={() => addProduct(lot)} photo={lot.photo}/>
+                                        text={i18next.t('js_rep.BUY')} click={() => addProduct(lot)}
+                                        photo={getImgByName(lot.photo)}/>
                             </span>
                 ))}
             </div>
@@ -58,12 +46,13 @@ function Accessories({ addProduct, productItems, getProducts }: React.PropsWithC
 }
 
 const mapStateToProps = (state): MapStateToProps => ({
-    productItems: state.product.productItems
+    productItems: state.accessories.productItems,
+    loading: state.accessories.loading
 })
 
 const mapDispatchToProps = (dispatch): MapDispatchToProps => ({
     addProduct: (item) => dispatch(addProduct(item)),
-    getProducts: () => dispatch(getProducts())
+    getAccessories: () => dispatch(getAccessories())
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(Accessories);

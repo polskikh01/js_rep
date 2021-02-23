@@ -16,7 +16,7 @@ const Lot: React.FC<lotProps> = ({ title, tagline, price, click, text, photo }) 
     <div className={style.product}>
         <span className={style.productTitle}>{title}</span>
         <p>{tagline}</p>
-        <span>{price}</span>
+        <span>{price}₽</span>
         <button onClick={click}>
             <span className={style.productBuy}>{text}</span>
         </button>

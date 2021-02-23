@@ -20,7 +20,12 @@ module.exports = {
   collectCoverage: true,
 
   // An array of glob patterns indicating a set of files for which coverage information should be collected
-  collectCoverageFrom: ["./src/**/*.ts?(x)"],
+  collectCoverageFrom: [
+      "./src/**/*.ts?(x)",
+      '!./src/containers/dashboadr.tsx',
+      '!./src/index.tsx',
+      '!./src/app.tsx'
+  ],
 
   // The directory where Jest should output its coverage files
   coverageDirectory: "<rootDir>/reports/coverage",
@@ -83,7 +88,9 @@ module.exports = {
   moduleNameMapper: {
     "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
     "@ijl/cli": "<rootDir>/__mocks__/ijl.cli.js",
-    "\\.(css)$": "identity-obj-proxy"
+    "\\.(css)$": "identity-obj-proxy",
+    "react-router-dom": "<rootDir>/__mocks__/react-router.tsx",
+    "i18next": "<rootDir>/__mocks__/i18next.js"
   },
 
   // An array of regexp pattern strings, matched against all module paths before considered 'visible' to the module loader

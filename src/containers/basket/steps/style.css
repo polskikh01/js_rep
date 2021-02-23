@@ -12,6 +12,7 @@ h1 {
     flex-direction: column;
     padding: 0 72px;
     margin-top: var(--offset-sm);
+    margin-bottom: var(--offset-sm);
 }
 
 .decision {

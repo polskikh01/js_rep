@@ -11,6 +11,7 @@ import { classic } from '../../../asset';
 import { getImgByName } from '../../../utils'
 
 import {getBasket} from "../../../__data__/actions/basket";
+import i18next from "i18next";
 
 type MapStateToProps = {
     loading: boolean
@@ -35,7 +36,7 @@ function Basket({ basket, loading, getBasket ,nextStep }: React.PropsWithChildre
         <div className={style.basket}>
             <h1>Корзина</h1>
             {basket.map((lot, index) => (
-                <BasketLot key={index} img={getImgByName(lot.photo)} title={lot.title} price={lot.price}/>
+                <BasketLot key={index} img={getImgByName(lot.photo)} title={i18next.t(lot.title)} price={lot.price}/>
             ))}
             <div className={style.decision}>
                 <Link to={URLs.product.url}>Вернуться к покупкам</Link>

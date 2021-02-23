@@ -3,12 +3,12 @@ import React, { useEffect } from 'react';
 import style from './style.css';
 import {Head, Footer, Lot, LotMore} from '../../components/index';
 
-import {classic, mini, ready, simple, accessories, complectation} from '../../asset/index';
+import { accessories, complectation } from '../../asset/index';
 
-import {URLs} from '../../__data__/urls';
+import { URLs } from '../../__data__/urls';
 import i18next from 'i18next';
 
-import {connect} from 'react-redux';
+import { connect } from 'react-redux';
 import { getProducts } from "../../__data__/actions/product";
 import { addProduct } from "../../__data__/actions/basket";
 import { getImgByName } from '../../utils'
@@ -27,8 +27,6 @@ function Product({ addProduct, productItems, getProducts, loading }: React.Props
     useEffect(() => {
         getProducts()
     }, [])
-
-    console.log(productItems);
 
     if (loading) {
         return <p>loading...</p>

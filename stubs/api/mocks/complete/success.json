@@ -1,0 +1,37 @@
+{
+  "status": {
+    "code": 0
+  },
+  "completes": [
+    {
+      "title": "js_rep.complete.hoseW",
+      "price": "750",
+      "photo": "white"
+    },
+    {
+      "title": "js_rep.complete.hoseB",
+      "price": "750",
+      "photo": "black"
+    },
+    {
+      "title": "js_rep.complete.magnet",
+      "price": "80",
+      "photo": "magnit"
+    },
+    {
+      "title": "js_rep.complete.connector",
+      "price": "600",
+      "photo": "connector"
+    },
+    {
+      "title": "js_rep.complete.flaskC",
+      "price": "1200",
+      "photo": "classicK"
+    },
+    {
+      "title": "js_rep.complete.flaskM",
+      "price": "1000",
+      "photo": "miniK"
+    }
+  ]
+}

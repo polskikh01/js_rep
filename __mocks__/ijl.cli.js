@@ -1,9 +1,10 @@
-const ijlConfig = require('../ijl.config')
+const { navigations, config } = require('../ijl.config')
 
 module.exports = {
     getNavigations: () => {
         return {
-            ...ijlConfig.navigations
+            ...navigations
         }
-    }
+    },
+    getConfigValue: (key) => config[key]
 }

@@ -15,9 +15,6 @@ const BasketLot: React.FC<basketLotProps> = ({ img, title, price }) => (
             <span>{title}</span>
             <span>{price}₽</span>
         </div>
-        <div className={style.deleteLot}>
-            <span>Удалить</span>
-        </div>
     </div>
 );
 

@@ -6,6 +6,7 @@
     flex-direction: column;
     padding-top: var(--offset-sm);
     background-color: var(--grey);
+    margin-bottom: var(--offset-md);
 }
 
 .lot {
@@ -22,17 +23,5 @@
         font-size: 24px;
         font-weight: 450;
         padding-right: var(--offset-md);
-    }
-}
-
-.delete-lot {
-    display: flex;
-    justify-content: flex-end;
-
-    span {
-        font-size: 18px;
-        color: var(--red);
-        padding: 0 var(--offset-md) var(--offset-xs) 0;
-        cursor: pointer;
     }
 }

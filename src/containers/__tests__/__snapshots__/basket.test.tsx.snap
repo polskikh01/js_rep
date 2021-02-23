@@ -1,0 +1,401 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Тестирование всего приложения Тестируем рендер basketStep1 1`] = `
+<Provider
+  store={
+    Object {
+      "dispatch": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+      Symbol(observable): [Function],
+    }
+  }
+>
+  <Basket>
+    <BasketPage>
+      <div
+        className="page"
+      >
+        <Head>
+          <header
+            className="mHeader"
+          >
+            <div
+              className="menuHeader"
+            >
+              <div
+                className="menu"
+              >
+                <Link
+                  className="logo"
+                  to="/main"
+                >
+                  <a>
+                    mock link
+                  </a>
+                </Link>
+                <nav
+                  className="navP"
+                >
+                  <Nav
+                    link="/product"
+                    title="Продукты"
+                  >
+                    <Link
+                      className="navButt"
+                      to="/product"
+                    >
+                      <a>
+                        mock link
+                      </a>
+                    </Link>
+                  </Nav>
+                  <Nav
+                    link="/shippingAndPayment"
+                    title="Доставка и оплата"
+                  >
+                    <Link
+                      className="navButt"
+                      to="/shippingAndPayment"
+                    >
+                      <a>
+                        mock link
+                      </a>
+                    </Link>
+                  </Nav>
+                  <Nav
+                    link="/contacts"
+                    title="Контакты"
+                  >
+                    <Link
+                      className="navButt"
+                      to="/contacts"
+                    >
+                      <a>
+                        mock link
+                      </a>
+                    </Link>
+                  </Nav>
+                </nav>
+                <div
+                  className="basket"
+                >
+                  <Link
+                    to="/basket"
+                  >
+                    <a>
+                      mock link
+                    </a>
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </header>
+        </Head>
+        <div
+          className="wrap"
+        >
+          <Connect(Basket)
+            nextStep={[Function]}
+          >
+            <Basket
+              basket={Array []}
+              getBasket={[Function]}
+              loading={true}
+              nextStep={[Function]}
+            >
+              <p>
+                loading...
+              </p>
+            </Basket>
+          </Connect(Basket)>
+        </div>
+        <Footer>
+          <footer
+            className="footerM"
+          >
+            <div
+              className="footerContainer"
+            >
+              <span>
+                Calabash
+              </span>
+              <h6>
+                ©2020-2021
+              </h6>
+            </div>
+            <div
+              className="footerContainer"
+            >
+              <span
+                className="title"
+              >
+                Продукты
+              </span>
+              <Link
+                to="/product"
+              >
+                <a>
+                  mock link
+                </a>
+              </Link>
+              <Link
+                to="/accessories"
+              >
+                <a>
+                  mock link
+                </a>
+              </Link>
+              <Link
+                to="/complete"
+              >
+                <a>
+                  mock link
+                </a>
+              </Link>
+            </div>
+            <div
+              className="footerContainer"
+            >
+              <span
+                className="title"
+              >
+                Аккаунт
+              </span>
+              <span
+                className="fCT"
+              >
+                Личный кабинет
+              </span>
+            </div>
+            <div
+              className="footerContainer"
+            >
+              <span
+                className="title"
+              >
+                Помощь
+              </span>
+              <Link
+                to="/shippingAndPayment"
+              >
+                <a>
+                  mock link
+                </a>
+              </Link>
+              <Link
+                to="/contacts"
+              >
+                <a>
+                  mock link
+                </a>
+              </Link>
+            </div>
+          </footer>
+        </Footer>
+      </div>
+    </BasketPage>
+  </Basket>
+</Provider>
+`;
+
+exports[`Тестирование всего приложения Тестируем рендер basketStep2 1`] = `
+<Provider
+  store={
+    Object {
+      "dispatch": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+      Symbol(observable): [Function],
+    }
+  }
+>
+  <Basket>
+    <BasketPage>
+      <div
+        className="page"
+      >
+        <Head>
+          <header
+            className="mHeader"
+          >
+            <div
+              className="menuHeader"
+            >
+              <div
+                className="menu"
+              >
+                <Link
+                  className="logo"
+                  to="/main"
+                >
+                  <a>
+                    mock link
+                  </a>
+                </Link>
+                <nav
+                  className="navP"
+                >
+                  <Nav
+                    link="/product"
+                    title="Продукты"
+                  >
+                    <Link
+                      className="navButt"
+                      to="/product"
+                    >
+                      <a>
+                        mock link
+                      </a>
+                    </Link>
+                  </Nav>
+                  <Nav
+                    link="/shippingAndPayment"
+                    title="Доставка и оплата"
+                  >
+                    <Link
+                      className="navButt"
+                      to="/shippingAndPayment"
+                    >
+                      <a>
+                        mock link
+                      </a>
+                    </Link>
+                  </Nav>
+                  <Nav
+                    link="/contacts"
+                    title="Контакты"
+                  >
+                    <Link
+                      className="navButt"
+                      to="/contacts"
+                    >
+                      <a>
+                        mock link
+                      </a>
+                    </Link>
+                  </Nav>
+                </nav>
+                <div
+                  className="basket"
+                >
+                  <Link
+                    to="/basket"
+                  >
+                    <a>
+                      mock link
+                    </a>
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </header>
+        </Head>
+        <div
+          className="wrap"
+        >
+          <Connect(Basket)
+            nextStep={[Function]}
+          >
+            <Basket
+              basket={Array []}
+              getBasket={[Function]}
+              loading={true}
+              nextStep={[Function]}
+            >
+              <p>
+                loading...
+              </p>
+            </Basket>
+          </Connect(Basket)>
+        </div>
+        <Footer>
+          <footer
+            className="footerM"
+          >
+            <div
+              className="footerContainer"
+            >
+              <span>
+                Calabash
+              </span>
+              <h6>
+                ©2020-2021
+              </h6>
+            </div>
+            <div
+              className="footerContainer"
+            >
+              <span
+                className="title"
+              >
+                Продукты
+              </span>
+              <Link
+                to="/product"
+              >
+                <a>
+                  mock link
+                </a>
+              </Link>
+              <Link
+                to="/accessories"
+              >
+                <a>
+                  mock link
+                </a>
+              </Link>
+              <Link
+                to="/complete"
+              >
+                <a>
+                  mock link
+                </a>
+              </Link>
+            </div>
+            <div
+              className="footerContainer"
+            >
+              <span
+                className="title"
+              >
+                Аккаунт
+              </span>
+              <span
+                className="fCT"
+              >
+                Личный кабинет
+              </span>
+            </div>
+            <div
+              className="footerContainer"
+            >
+              <span
+                className="title"
+              >
+                Помощь
+              </span>
+              <Link
+                to="/shippingAndPayment"
+              >
+                <a>
+                  mock link
+                </a>
+              </Link>
+              <Link
+                to="/contacts"
+              >
+                <a>
+                  mock link
+                </a>
+              </Link>
+            </div>
+          </footer>
+        </Footer>
+      </div>
+    </BasketPage>
+  </Basket>
+</Provider>
+`;

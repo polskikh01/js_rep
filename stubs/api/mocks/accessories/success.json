@@ -1,0 +1,22 @@
+{
+  "status": {
+    "code": 0
+  },
+  "accessories": [
+    {
+      "title": "Killer M",
+      "price": "2750",
+      "photo": "killerM"
+    },
+    {
+      "title": "Glina Classic",
+      "price": "800",
+      "photo": "glinaClassic"
+    },
+    {
+      "title": "Glina Mini",
+      "price": "650",
+      "photo": "glinaMini"
+    }
+  ]
+}

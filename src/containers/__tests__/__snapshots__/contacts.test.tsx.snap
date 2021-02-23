@@ -1,0 +1,323 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Тестирование всего приложения Тестируем рендер Complete 1`] = `
+<Provider
+  store={
+    Object {
+      "dispatch": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+      Symbol(observable): [Function],
+    }
+  }
+>
+  <Contacts>
+    <div
+      className="page"
+    >
+      <Head>
+        <header
+          className="mHeader"
+        >
+          <div
+            className="menuHeader"
+          >
+            <div
+              className="menu"
+            >
+              <Link
+                className="logo"
+                to="/main"
+              >
+                <a>
+                  mock link
+                </a>
+              </Link>
+              <nav
+                className="navP"
+              >
+                <Nav
+                  link="/product"
+                  title="Продукты"
+                >
+                  <Link
+                    className="navButt"
+                    to="/product"
+                  >
+                    <a>
+                      mock link
+                    </a>
+                  </Link>
+                </Nav>
+                <Nav
+                  link="/shippingAndPayment"
+                  title="Доставка и оплата"
+                >
+                  <Link
+                    className="navButt"
+                    to="/shippingAndPayment"
+                  >
+                    <a>
+                      mock link
+                    </a>
+                  </Link>
+                </Nav>
+                <Nav
+                  link="/contacts"
+                  title="Контакты"
+                >
+                  <Link
+                    className="navButt"
+                    to="/contacts"
+                  >
+                    <a>
+                      mock link
+                    </a>
+                  </Link>
+                </Nav>
+              </nav>
+              <div
+                className="basket"
+              >
+                <Link
+                  to="/basket"
+                >
+                  <a>
+                    mock link
+                  </a>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </header>
+      </Head>
+      <div
+        className="wrap"
+      >
+        <h1>
+          Компания Calabash
+        </h1>
+        <div
+          className="contactInfo"
+        >
+          <div
+            className="contact"
+          >
+            <span
+              className="contactTitle"
+            >
+              С удовольствием ответим на Ваши вопросы с 9:00 до 17:00
+               
+              <br />
+               
+              по московскому времени
+            </span>
+            <span
+              className="contactText"
+              style={
+                Object {
+                  "color": "#5DB8B2",
+                }
+              }
+            >
+              +7 (777) 777 77 77
+            </span>
+            <span
+              className="contactTitle"
+            >
+              По вопросам гарантийного обслуживания
+            </span>
+            <span
+              className="contactText"
+            >
+              support@gmail.com
+            </span>
+            <span
+              className="contactTitle"
+            >
+              По вопросам сотрудничества
+            </span>
+            <span
+              className="contactText"
+              style={
+                Object {
+                  "marginBottom": 0,
+                }
+              }
+            >
+              ivanov.ivan@gmail.com
+            </span>
+            <span
+              className="contactText"
+            >
+              По вопросам сотрудничества
+            </span>
+          </div>
+          <div
+            className="address"
+          >
+            <span
+              className="contactTitle"
+            >
+              Адрес
+            </span>
+            <span
+              className="contactText"
+            >
+              г. Москва, Красная площадь
+            </span>
+          </div>
+          <div
+            className="social"
+          >
+            <div
+              style={
+                Object {
+                  "alignItems": "flex-start",
+                  "display": "flex",
+                  "flexDirection": "column",
+                }
+              }
+            >
+              <span
+                className="contactTitle"
+              >
+                ВКонтакте
+              </span>
+              <span
+                className="contactText"
+              >
+                Calabash
+              </span>
+              <span
+                className="contactTitle"
+              >
+                Instagram
+              </span>
+              <span
+                className="contactText"
+              >
+                calabash
+              </span>
+            </div>
+            <div
+              style={
+                Object {
+                  "alignItems": "flex-start",
+                  "display": "flex",
+                  "flexDirection": "column",
+                }
+              }
+            >
+              <span
+                className="contactTitle"
+              >
+                Новостной канал в Telegram
+              </span>
+              <span
+                className="contactText"
+              >
+                @calabash_news
+              </span>
+              <span
+                className="contactTitle"
+              >
+                Чат с нами в Telegram
+              </span>
+              <span
+                className="contactText"
+              >
+                @calabash_chat
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <Footer>
+        <footer
+          className="footerM"
+        >
+          <div
+            className="footerContainer"
+          >
+            <span>
+              Calabash
+            </span>
+            <h6>
+              ©2020-2021
+            </h6>
+          </div>
+          <div
+            className="footerContainer"
+          >
+            <span
+              className="title"
+            >
+              Продукты
+            </span>
+            <Link
+              to="/product"
+            >
+              <a>
+                mock link
+              </a>
+            </Link>
+            <Link
+              to="/accessories"
+            >
+              <a>
+                mock link
+              </a>
+            </Link>
+            <Link
+              to="/complete"
+            >
+              <a>
+                mock link
+              </a>
+            </Link>
+          </div>
+          <div
+            className="footerContainer"
+          >
+            <span
+              className="title"
+            >
+              Аккаунт
+            </span>
+            <span
+              className="fCT"
+            >
+              Личный кабинет
+            </span>
+          </div>
+          <div
+            className="footerContainer"
+          >
+            <span
+              className="title"
+            >
+              Помощь
+            </span>
+            <Link
+              to="/shippingAndPayment"
+            >
+              <a>
+                mock link
+              </a>
+            </Link>
+            <Link
+              to="/contacts"
+            >
+              <a>
+                mock link
+              </a>
+            </Link>
+          </div>
+        </footer>
+      </Footer>
+    </div>
+  </Contacts>
+</Provider>
+`;

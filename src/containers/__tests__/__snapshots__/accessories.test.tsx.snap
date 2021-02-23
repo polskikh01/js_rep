@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Тестирование всего приложения Тестируем рендер Accessories 1`] = `
+<Provider
+  store={
+    Object {
+      "dispatch": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+      Symbol(observable): [Function],
+    }
+  }
+>
+  <Connect(Accessories)>
+    <Accessories
+      addProduct={[Function]}
+      getAccessories={[Function]}
+      loading={true}
+      productItems={Array []}
+    >
+      <p>
+        loading...
+      </p>
+    </Accessories>
+  </Connect(Accessories)>
+</Provider>
+`;
