@@ -13,7 +13,7 @@ export default () => <App />;
 
 export const mount = async (Сomponent) => {
     await Promise.all([i18NextPromise]);
-    ReactDom.render(<Сomponent/>, document.getElementById('app'));
+    ReactDom.render(<Сomponent />, document.getElementById('app'));
 };
 
 export const unmount = () => {

@@ -7,12 +7,12 @@ const submitActionCreator = () => ({ type: types.BASKET.REQUEST });
 const successActionCreator = (items) => ({ type: types.BASKET.SUCCESS, payload: items });
 const errorActionCreator = (error) => ({ type: types.BASKET.FAILURE, payload: error });
 
-export const addProduct = product => async (dispatch) => {
+export const addProduct = (product) => async (dispatch) => {
     const baseApiUrl = getConfigValue('js_rep.api');
 
     dispatch(submitActionCreator());
     try {
-        const response = await axios.post(`${baseApiUrl}/addProduct`, {product});
+        const response = await axios.post(`${baseApiUrl}/addProduct`, { product });
         console.log(response);
         dispatch(successActionCreator(response.data.basket));
     } catch (error) {

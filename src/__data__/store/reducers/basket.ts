@@ -1,20 +1,20 @@
 import * as types from '../../action-types';
 
 export type BasketState = {
-    basket: [],
-    loading: boolean
+    basket: [];
+    loading: boolean;
 };
 
 const initialState: BasketState = {
     basket: [],
-    loading: false
+    loading: false,
 };
 
 const handleSubmit = (state, action) => ({ ...state, loading: true });
 const handleSuccess = (state, action) => ({
     ...state,
     loading: false,
-    basket: action.payload
+    basket: action.payload,
 });
 const handleFailure = (state, action) => ({ ...state, loading: false });
 

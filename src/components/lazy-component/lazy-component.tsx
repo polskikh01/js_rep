@@ -1,15 +1,11 @@
-import React, {Suspense} from 'react';
+import React, { Suspense } from 'react';
 
-const LazyComponent = ({children, fallback}) => {
-    return (
-        <Suspense fallback={fallback}>
-            {children}
-        </Suspense>
-    )
-}
+const LazyComponent = ({ children, fallback }) => {
+    return <Suspense fallback={fallback}>{children}</Suspense>;
+};
 
 LazyComponent.defaultProps = {
-    fallback: 'Loading...'
-}
+    fallback: 'Loading...',
+};
 
-export default LazyComponent
+export default LazyComponent;

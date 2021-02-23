@@ -39,12 +39,8 @@ class ShippingAndPayment extends React.Component {
                         </h5>
                         <div style={{ paddingLeft: '18px' }}>
                             <ul>
-                                <li>
-                                    {i18next.t('js_rep.sAP.payment.online.EL')}
-                                </li>
-                                <li>
-                                    {i18next.t('js_rep.sAP.payment.online.BN')}
-                                </li>
+                                <li>{i18next.t('js_rep.sAP.payment.online.EL')}</li>
+                                <li>{i18next.t('js_rep.sAP.payment.online.BN')}</li>
                             </ul>
                         </div>
                     </div>

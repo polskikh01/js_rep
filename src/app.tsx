@@ -4,7 +4,7 @@ import { Provider } from 'react-redux';
 
 import Dashboard from './containers/dashboadr';
 
-import { store } from "./__data__/store";
+import { store } from './__data__/store';
 
 import './app.css';
 

@@ -1,20 +1,20 @@
 import * as types from '../../action-types';
 
 export type ProductState = {
-    productItems: [],
-    loading: boolean
+    productItems: [];
+    loading: boolean;
 };
 
 const initialState: ProductState = {
     productItems: [],
-    loading: false
+    loading: false,
 };
 
 const handleSubmit = (state, action) => ({ ...state, loading: true });
 const handleSuccess = (state, action) => ({
     ...state,
     loading: false,
-    productItems: action.payload
+    productItems: action.payload,
 });
 const handleFailure = (state, action) => ({ ...state, loading: false });
 

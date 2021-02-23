@@ -1,3 +1,3 @@
-import LazyComponent  from './lazy-component';
+import LazyComponent from './lazy-component';
 
-export default LazyComponent
+export default LazyComponent;
