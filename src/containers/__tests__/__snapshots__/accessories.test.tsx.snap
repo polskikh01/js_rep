@@ -67,6 +67,7 @@ exports[`Тестирование всего приложения Тестиру
       <div
         className="page"
       >
+        <MetaTags />
         <Head>
           <header
             className="mHeader"

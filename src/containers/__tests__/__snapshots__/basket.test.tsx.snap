@@ -96,6 +96,7 @@ exports[`Тестирование всего приложения Тестиру
         <div
           className="wrap"
         >
+          <MetaTags />
           <Connect(Basket)
             nextStep={[Function]}
           >
@@ -296,6 +297,7 @@ exports[`Тестирование всего приложения Тестиру
         <div
           className="wrap"
         >
+          <MetaTags />
           <Connect(Basket)
             nextStep={[Function]}
           >

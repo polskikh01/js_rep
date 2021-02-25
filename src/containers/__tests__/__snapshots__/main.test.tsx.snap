@@ -14,81 +14,131 @@ exports[`Тестирование всего приложения Тестиру
 >
   <Main>
     <div
-      id="wrapper"
+      className="page"
     >
-      <div
-        className="focusWrapper"
-        id="focus-wrapper"
-      >
-        <div
-          className="page"
+      <MetaTags />
+      <Head>
+        <header
+          className="mHeader"
         >
-          <Head>
-            <header
-              className="mHeader"
+          <div
+            className="menuHeader"
+          >
+            <div
+              className="menu"
             >
-              <div
-                className="menuHeader"
+              <Link
+                className="logo"
+                to="/main"
               >
-                <div
-                  className="menu"
+                <a>
+                  mock link
+                </a>
+              </Link>
+              <nav
+                className="navP"
+              >
+                <Nav
+                  link="/product"
+                  title="Продукты"
                 >
                   <Link
-                    className="logo"
-                    to="/main"
+                    className="navButt"
+                    to="/product"
                   >
                     <a>
                       mock link
                     </a>
                   </Link>
-                  <nav
-                    className="navP"
+                </Nav>
+                <Nav
+                  link="/shippingAndPayment"
+                  title="Доставка и оплата"
+                >
+                  <Link
+                    className="navButt"
+                    to="/shippingAndPayment"
                   >
-                    <Nav
-                      link="/product"
-                      title="Продукты"
-                    >
-                      <Link
-                        className="navButt"
-                        to="/product"
-                      >
-                        <a>
-                          mock link
-                        </a>
-                      </Link>
-                    </Nav>
-                    <Nav
-                      link="/shippingAndPayment"
-                      title="Доставка и оплата"
-                    >
-                      <Link
-                        className="navButt"
-                        to="/shippingAndPayment"
-                      >
-                        <a>
-                          mock link
-                        </a>
-                      </Link>
-                    </Nav>
-                    <Nav
-                      link="/contacts"
-                      title="Контакты"
-                    >
-                      <Link
-                        className="navButt"
-                        to="/contacts"
-                      >
-                        <a>
-                          mock link
-                        </a>
-                      </Link>
-                    </Nav>
-                  </nav>
+                    <a>
+                      mock link
+                    </a>
+                  </Link>
+                </Nav>
+                <Nav
+                  link="/contacts"
+                  title="Контакты"
+                >
+                  <Link
+                    className="navButt"
+                    to="/contacts"
+                  >
+                    <a>
+                      mock link
+                    </a>
+                  </Link>
+                </Nav>
+              </nav>
+              <div
+                className="basket"
+              >
+                <Link
+                  to="/basket"
+                >
+                  <a>
+                    mock link
+                  </a>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </header>
+      </Head>
+      <div
+        className="wrap"
+      >
+        <div
+          className="line"
+        >
+          <section>
+            <div
+              className="info"
+            >
+              <div
+                className="infoPhoto"
+              />
+              <div
+                className="infoText"
+              >
+                <div
+                  className="text"
+                >
                   <div
-                    className="basket"
+                    className="textT"
+                  >
+                    <span
+                      className="lSText"
+                    >
+                      Calabash
+                    </span>
+                  </div>
+                  <div
+                    className="textT"
+                  >
+                    <span
+                      className="lSTextB"
+                    >
+                      Твоя очередь
+                       
+                      <br />
+                       
+                      создавать стиль
+                    </span>
+                  </div>
+                  <div
+                    className="textT"
                   >
                     <Link
-                      to="/basket"
+                      to="/product"
                     >
                       <a>
                         mock link
@@ -97,66 +147,8 @@ exports[`Тестирование всего приложения Тестиру
                   </div>
                 </div>
               </div>
-            </header>
-          </Head>
-          <div
-            className="wrap"
-          >
-            <div
-              className="line"
-            >
-              <section>
-                <div
-                  className="info"
-                >
-                  <div
-                    className="infoPhoto"
-                  />
-                  <div
-                    className="infoText"
-                  >
-                    <div
-                      className="text"
-                    >
-                      <div
-                        className="textT"
-                      >
-                        <span
-                          className="lSText"
-                        >
-                          Calabash
-                        </span>
-                      </div>
-                      <div
-                        className="textT"
-                      >
-                        <span
-                          className="lSTextB"
-                        >
-                          Твоя очередь
-                           
-                          <br />
-                           
-                          создавать стиль
-                        </span>
-                      </div>
-                      <div
-                        className="textT"
-                      >
-                        <Link
-                          to="/product"
-                        >
-                          <a>
-                            mock link
-                          </a>
-                        </Link>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </section>
             </div>
-          </div>
+          </section>
         </div>
       </div>
     </div>

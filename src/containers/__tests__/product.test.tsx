@@ -54,25 +54,5 @@ describe('Тестирование всего приложения', () => {
         component.update();
 
         expect(component).toMatchSnapshot();
-
-        // component.find('button#lotButton').simulate('click')
-        // component.update()
-
-        // const responseAdd = [
-        //     [
-        //         'GET',
-        //         `/addProduct`,
-        //         { },
-        //         200,
-        //         {
-        //             ...response
-        //         }
-        //     ]
-        // ]
-        //
-        // await multipleRequest(mockAxios, responseAdd)
-        // component.update()
-
-        // expect(component).toMatchSnapshot()
     });
 });
