@@ -1,13 +1,18 @@
 import React from 'react';
+import i18next from 'i18next';
+import MetaTags from 'react-meta-tags';
 
 import style from './style.css';
+
 import { Footer, Head } from '../../components';
-import i18next from 'i18next';
 
 class ShippingAndPayment extends React.Component {
     render() {
         return (
             <div className={style.page}>
+                <MetaTags>
+                    <title>{i18next.t('js_rep.SAP')}</title>
+                </MetaTags>
                 <Head />
                 <div className={style.wrap}>
                     <h1>{i18next.t('js_rep.sAP.info')}</h1>

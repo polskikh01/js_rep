@@ -29,7 +29,7 @@
     flex-direction: row;
     justify-content: space-between;
 
-    .info-photo{
+    .info-photo {
         display: flex;
         flex-direction: column;
         width: 50%;

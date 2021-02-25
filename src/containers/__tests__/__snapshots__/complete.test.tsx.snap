@@ -26,3 +26,464 @@ exports[`Тестирование всего приложения Тестиру
   </Connect(Complete)>
 </Provider>
 `;
+
+exports[`Тестирование всего приложения Тестируем рендер Complete 2`] = `
+<Provider
+  store={
+    Object {
+      "dispatch": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+      Symbol(observable): [Function],
+    }
+  }
+>
+  <Connect(Complete)>
+    <Complete
+      addProduct={[Function]}
+      getComplete={[Function]}
+      loading={false}
+      productItems={
+        Array [
+          Object {
+            "photo": "white",
+            "price": "750",
+            "title": "js_rep.complete.hoseW",
+          },
+          Object {
+            "photo": "black",
+            "price": "750",
+            "title": "js_rep.complete.hoseB",
+          },
+          Object {
+            "photo": "magnit",
+            "price": "80",
+            "title": "js_rep.complete.magnet",
+          },
+          Object {
+            "photo": "connector",
+            "price": "600",
+            "title": "js_rep.complete.connector",
+          },
+          Object {
+            "photo": "classicK",
+            "price": "1200",
+            "title": "js_rep.complete.flaskC",
+          },
+          Object {
+            "photo": "miniK",
+            "price": "1000",
+            "title": "js_rep.complete.flaskM",
+          },
+        ]
+      }
+    >
+      <div
+        id="wrapper"
+      >
+        <div
+          className="focusWrapper"
+          id="focus-wrapper"
+        >
+          <div
+            className="page"
+          >
+            <Head>
+              <header
+                className="mHeader"
+              >
+                <div
+                  className="menuHeader"
+                >
+                  <div
+                    className="menu"
+                  >
+                    <Link
+                      className="logo"
+                      to="/main"
+                    >
+                      <a>
+                        mock link
+                      </a>
+                    </Link>
+                    <nav
+                      className="navP"
+                    >
+                      <Nav
+                        link="/product"
+                        title="Продукты"
+                      >
+                        <Link
+                          className="navButt"
+                          to="/product"
+                        >
+                          <a>
+                            mock link
+                          </a>
+                        </Link>
+                      </Nav>
+                      <Nav
+                        link="/shippingAndPayment"
+                        title="Доставка и оплата"
+                      >
+                        <Link
+                          className="navButt"
+                          to="/shippingAndPayment"
+                        >
+                          <a>
+                            mock link
+                          </a>
+                        </Link>
+                      </Nav>
+                      <Nav
+                        link="/contacts"
+                        title="Контакты"
+                      >
+                        <Link
+                          className="navButt"
+                          to="/contacts"
+                        >
+                          <a>
+                            mock link
+                          </a>
+                        </Link>
+                      </Nav>
+                    </nav>
+                    <div
+                      className="basket"
+                    >
+                      <Link
+                        to="/basket"
+                      >
+                        <a>
+                          mock link
+                        </a>
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </header>
+            </Head>
+            <div
+              className="wrap"
+            >
+              <span
+                key="0"
+              >
+                <LotAlt
+                  click={[Function]}
+                  photo="FILE_MOCK"
+                  price="750"
+                  text="Купить"
+                  title="Шланг белый"
+                >
+                  <div
+                    className="product"
+                  >
+                    <span
+                      className="productTitle"
+                    >
+                      Шланг белый
+                    </span>
+                    <p />
+                    <span>
+                      750
+                      ₽
+                    </span>
+                    <button
+                      onClick={[Function]}
+                    >
+                      <span
+                        className="productBuy"
+                      >
+                        Купить
+                      </span>
+                    </button>
+                    <img
+                      src="FILE_MOCK"
+                    />
+                  </div>
+                </LotAlt>
+              </span>
+              <span
+                key="1"
+              >
+                <LotAlt
+                  click={[Function]}
+                  photo="FILE_MOCK"
+                  price="750"
+                  text="Купить"
+                  title="Шланг черный"
+                >
+                  <div
+                    className="product"
+                  >
+                    <span
+                      className="productTitle"
+                    >
+                      Шланг черный
+                    </span>
+                    <p />
+                    <span>
+                      750
+                      ₽
+                    </span>
+                    <button
+                      onClick={[Function]}
+                    >
+                      <span
+                        className="productBuy"
+                      >
+                        Купить
+                      </span>
+                    </button>
+                    <img
+                      src="FILE_MOCK"
+                    />
+                  </div>
+                </LotAlt>
+              </span>
+              <span
+                key="2"
+              >
+                <LotAlt
+                  click={[Function]}
+                  photo="FILE_MOCK"
+                  price="80"
+                  text="Купить"
+                  title="Неодовый магнит"
+                >
+                  <div
+                    className="product"
+                  >
+                    <span
+                      className="productTitle"
+                    >
+                      Неодовый магнит
+                    </span>
+                    <p />
+                    <span>
+                      80
+                      ₽
+                    </span>
+                    <button
+                      onClick={[Function]}
+                    >
+                      <span
+                        className="productBuy"
+                      >
+                        Купить
+                      </span>
+                    </button>
+                    <img
+                      src="FILE_MOCK"
+                    />
+                  </div>
+                </LotAlt>
+              </span>
+              <span
+                key="3"
+              >
+                <LotAlt
+                  click={[Function]}
+                  photo="FILE_MOCK"
+                  price="600"
+                  text="Купить"
+                  title="Коннектор"
+                >
+                  <div
+                    className="product"
+                  >
+                    <span
+                      className="productTitle"
+                    >
+                      Коннектор
+                    </span>
+                    <p />
+                    <span>
+                      600
+                      ₽
+                    </span>
+                    <button
+                      onClick={[Function]}
+                    >
+                      <span
+                        className="productBuy"
+                      >
+                        Купить
+                      </span>
+                    </button>
+                    <img
+                      src="FILE_MOCK"
+                    />
+                  </div>
+                </LotAlt>
+              </span>
+              <span
+                key="4"
+              >
+                <LotAlt
+                  click={[Function]}
+                  photo="FILE_MOCK"
+                  price="1200"
+                  text="Купить"
+                  title="Колба Classic"
+                >
+                  <div
+                    className="product"
+                  >
+                    <span
+                      className="productTitle"
+                    >
+                      Колба Classic
+                    </span>
+                    <p />
+                    <span>
+                      1200
+                      ₽
+                    </span>
+                    <button
+                      onClick={[Function]}
+                    >
+                      <span
+                        className="productBuy"
+                      >
+                        Купить
+                      </span>
+                    </button>
+                    <img
+                      src="FILE_MOCK"
+                    />
+                  </div>
+                </LotAlt>
+              </span>
+              <span
+                key="5"
+              >
+                <LotAlt
+                  click={[Function]}
+                  photo="FILE_MOCK"
+                  price="1000"
+                  text="Купить"
+                  title="Колба Mini"
+                >
+                  <div
+                    className="product"
+                  >
+                    <span
+                      className="productTitle"
+                    >
+                      Колба Mini
+                    </span>
+                    <p />
+                    <span>
+                      1000
+                      ₽
+                    </span>
+                    <button
+                      onClick={[Function]}
+                    >
+                      <span
+                        className="productBuy"
+                      >
+                        Купить
+                      </span>
+                    </button>
+                    <img
+                      src="FILE_MOCK"
+                    />
+                  </div>
+                </LotAlt>
+              </span>
+            </div>
+            <Footer>
+              <footer
+                className="footerM"
+              >
+                <div
+                  className="footerContainer"
+                >
+                  <span>
+                    Calabash
+                  </span>
+                  <h6>
+                    ©2020-2021
+                  </h6>
+                </div>
+                <div
+                  className="footerContainer"
+                >
+                  <span
+                    className="title"
+                  >
+                    Продукты
+                  </span>
+                  <Link
+                    to="/product"
+                  >
+                    <a>
+                      mock link
+                    </a>
+                  </Link>
+                  <Link
+                    to="/accessories"
+                  >
+                    <a>
+                      mock link
+                    </a>
+                  </Link>
+                  <Link
+                    to="/complete"
+                  >
+                    <a>
+                      mock link
+                    </a>
+                  </Link>
+                </div>
+                <div
+                  className="footerContainer"
+                >
+                  <span
+                    className="title"
+                  >
+                    Аккаунт
+                  </span>
+                  <span
+                    className="fCT"
+                  >
+                    Личный кабинет
+                  </span>
+                </div>
+                <div
+                  className="footerContainer"
+                >
+                  <span
+                    className="title"
+                  >
+                    Помощь
+                  </span>
+                  <Link
+                    to="/shippingAndPayment"
+                  >
+                    <a>
+                      mock link
+                    </a>
+                  </Link>
+                  <Link
+                    to="/contacts"
+                  >
+                    <a>
+                      mock link
+                    </a>
+                  </Link>
+                </div>
+              </footer>
+            </Footer>
+          </div>
+        </div>
+      </div>
+    </Complete>
+  </Connect(Complete)>
+</Provider>
+`;

@@ -1,17 +1,14 @@
 import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import { connect } from 'react-redux';
+import i18next from 'i18next';
 
 import style from './style.css';
-import { Link } from 'react-router-dom';
+
 import { URLs } from '../../../__data__/urls';
 import { BasketLot } from '../../../components';
-
-import { connect } from 'react-redux';
-
-import { classic } from '../../../asset';
 import { getImgByName } from '../../../utils';
-
 import { getBasket } from '../../../__data__/actions/basket';
-import i18next from 'i18next';
 
 type MapStateToProps = {
     loading: boolean;

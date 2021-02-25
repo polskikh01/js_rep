@@ -1,7 +1,10 @@
 import React from 'react';
+import MetaTags from 'react-meta-tags';
+import i18next from 'i18next';
 
 import Step1 from './steps/step1';
 import Step2 from './steps/step2';
+import Step3 from './steps/step3';
 
 import { BasketStep, StageProps } from './steps/model';
 import { useStages } from '../../hooks';
@@ -14,6 +17,10 @@ const steps = {
     },
     [BasketStep.STEP2]: {
         component: Step2,
+        next: BasketStep.STEP3,
+    },
+    [BasketStep.STEP3]: {
+        component: Step3,
         next: null,
     },
 };
@@ -24,6 +31,9 @@ function Basket() {
 
     return (
         <BasketPage>
+            <MetaTags>
+                <title>{i18next.t('js_rep.BASKET')}</title>
+            </MetaTags>
             <Stage nextStep={nextStep} />
         </BasketPage>
     );

@@ -1,5 +1,5 @@
-import axios from 'axios';
 import { getConfigValue } from '@ijl/cli';
+import { commonAxios } from '../../utils/axios';
 
 import * as types from '../action-types';
 
@@ -12,7 +12,8 @@ export const getAccessories = () => async (dispatch) => {
 
     dispatch(submitActionCreator());
     try {
-        const response = await axios.get(`${baseApiUrl}/getAccessories`);
+        const response = await commonAxios.get(`${baseApiUrl}/getAccessories`);
+        console.log(response.data.accessories);
         dispatch(successActionCreator(response.data.accessories));
     } catch (error) {
         dispatch(errorActionCreator('Неизвестная ошибка'));

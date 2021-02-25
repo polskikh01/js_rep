@@ -1,4 +1,4 @@
-const { navigations, config } = require('../ijl.config')
+const {navigations, config} = require('../ijl.config')
 
 module.exports = {
     getNavigations: () => {

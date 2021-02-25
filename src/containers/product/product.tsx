@@ -1,14 +1,13 @@
 import React, { useEffect } from 'react';
+import MetaTags from 'react-meta-tags';
+import i18next from 'i18next';
+import { connect } from 'react-redux';
 
 import style from './style.css';
+
 import { Head, Footer, Lot, LotMore } from '../../components/index';
-
 import { accessories, complectation } from '../../asset/index';
-
 import { URLs } from '../../__data__/urls';
-import i18next from 'i18next';
-
-import { connect } from 'react-redux';
 import { getProducts } from '../../__data__/actions/product';
 import { addProduct } from '../../__data__/actions/basket';
 import { getImgByName } from '../../utils';
@@ -38,41 +37,40 @@ function Product({
     }
 
     return (
-        <div id={'wrapper'}>
-            <div className={style.focusWrapper} id={'focus-wrapper'}>
-                <div className={style.page}>
-                    <Head />
-                    <div className={style.wrap}>
-                        {productItems.map((lot, index) => (
-                            <span key={index}>
-                                <Lot
-                                    title={lot.title}
-                                    tagline={i18next.t(lot.tagline)}
-                                    price={lot.price}
-                                    text={i18next.t('js_rep.BUY')}
-                                    click={() => addProduct(lot)}
-                                    photo={getImgByName(lot.photo)}
-                                />
-                            </span>
-                        ))}
-                        <LotMore
-                            title={i18next.t('js_rep.COMPLETE')}
-                            tagline={i18next.t('js_rep.product.taglineComplete')}
-                            to={URLs.complete.url}
-                            text={i18next.t('js_rep.MORE')}
-                            photo={complectation}
+        <div className={style.page}>
+            <MetaTags>
+                <title>{i18next.t('js_rep.PRODUCT')}</title>
+            </MetaTags>
+            <Head />
+            <div className={style.wrap}>
+                {productItems.map((lot, index) => (
+                    <span key={index}>
+                        <Lot
+                            title={lot.title}
+                            tagline={i18next.t(lot.tagline)}
+                            price={lot.price}
+                            text={i18next.t('js_rep.BUY')}
+                            click={() => addProduct(lot)}
+                            photo={getImgByName(lot.photo)}
                         />
-                        <LotMore
-                            title={i18next.t('js_rep.ACCESSORIES')}
-                            tagline={i18next.t('js_rep.product.taglineAccessories')}
-                            to={URLs.accessories.url}
-                            text={i18next.t('js_rep.MORE')}
-                            photo={accessories}
-                        />
-                    </div>
-                    <Footer />
-                </div>
+                    </span>
+                ))}
+                <LotMore
+                    title={i18next.t('js_rep.COMPLETE')}
+                    tagline={i18next.t('js_rep.product.taglineComplete')}
+                    to={URLs.complete.url}
+                    text={i18next.t('js_rep.MORE')}
+                    photo={complectation}
+                />
+                <LotMore
+                    title={i18next.t('js_rep.ACCESSORIES')}
+                    tagline={i18next.t('js_rep.product.taglineAccessories')}
+                    to={URLs.accessories.url}
+                    text={i18next.t('js_rep.MORE')}
+                    photo={accessories}
+                />
             </div>
+            <Footer />
         </div>
     );
 }

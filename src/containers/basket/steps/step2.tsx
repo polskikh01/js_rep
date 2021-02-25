@@ -2,7 +2,7 @@ import React from 'react';
 
 import style from './style.css';
 
-function Basket() {
+function Basket({ nextStep }) {
     return (
         <div className={style.basket}>
             <h1>Оформление заказа</h1>
@@ -25,7 +25,9 @@ function Basket() {
                 </div>
             </form>
             <div className={style.decision}>
-                <button className={style.confirm}>Заказать</button>
+                <button onClick={() => nextStep()} className={style.confirm}>
+                    Заказать
+                </button>
             </div>
         </div>
     );

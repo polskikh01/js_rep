@@ -14,6 +14,4 @@
     width: 100vw;
     max-width: 100vw;
     background: var(--white);
-    flex-direction: column;
-    justify-content: space-between;
 }

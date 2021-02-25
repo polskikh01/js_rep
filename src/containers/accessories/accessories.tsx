@@ -1,13 +1,14 @@
 import React, { useEffect } from 'react';
+import MetaTags from 'react-meta-tags';
+import i18next from 'i18next';
+import { connect } from 'react-redux';
 
 import style from './style.css';
-import { Footer, Head, LotAlt } from '../../components';
 
-import i18next from 'i18next';
+import { Footer, Head, LotAlt } from '../../components';
 import { getAccessories } from '../../__data__/actions/accessories';
 import { addProduct } from '../../__data__/actions/basket';
 import { getImgByName } from '../../utils';
-import { connect } from 'react-redux';
 
 type MapStateToProps = {
     productItems: any;
@@ -35,6 +36,9 @@ function Accessories({
 
     return (
         <div className={style.page}>
+            <MetaTags>
+                <title>{i18next.t('js_rep.ACCESSORIES')}</title>
+            </MetaTags>
             <Head />
             <div className={style.wrap}>
                 {productItems.map((lot, index) => (

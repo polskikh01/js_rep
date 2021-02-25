@@ -1,14 +1,18 @@
 import React from 'react';
+import MetaTags from 'react-meta-tags';
+import i18next from 'i18next';
 
 import style from './style.css';
+
 import { Footer, Head } from '../../components';
-import i18next from 'i18next';
-import { I18nContext } from 'react-i18next';
 
 class Contacts extends React.Component {
     render() {
         return (
             <div className={style.page}>
+                <MetaTags>
+                    <title>{i18next.t('js_rep.CONTACTS')}</title>
+                </MetaTags>
                 <Head />
                 <div className={style.wrap}>
                     <h1>Компания Calabash</h1>

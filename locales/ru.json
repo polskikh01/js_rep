@@ -2,9 +2,11 @@
   "js_rep.MORE": "Узнать больше",
   "js_rep.BUY": "Купить",
 
+  "js_rep.CALABASH": "Calabash",
   "js_rep.PRODUCT": "Продукты",
   "js_rep.SAP": "Доставка и оплата",
   "js_rep.CONTACTS": "Контакты",
+  "js_rep.BASKET": "Корзина",
 
   "js_rep.HOOKAH": "Кальяны",
   "js_rep.ACCESSORIES": "Аксессуары",
@@ -52,5 +54,9 @@
   "js_rep.sAP.payment": "Оплата",
   "js_rep.sAP.payment.online": "Способ оплаты заказа в Интернет-магазине:",
   "js_rep.sAP.payment.online.EL": "Электронным платежом через систему ROBOKASSA: Apple Pay, VISA, MasterCard, PayPal;",
-  "js_rep.sAP.payment.online.BN": "Безналичный расчёт для юридических лиц и индивидуальных предпринимателей (если Вы зарегистрировались и авторизовались как ИП или юридическое лицо)."
+  "js_rep.sAP.payment.online.BN": "Безналичный расчёт для юридических лиц и индивидуальных предпринимателей (если Вы зарегистрировались и авторизовались как ИП или юридическое лицо).",
+
+  "js_rep.basket.ready": "Ваш заказ оформлен!",
+  "js_rep.basket.ty": "Спасибо за покупку!",
+  "js_rep.basket.back": "Вернуться в магазин"
 }
